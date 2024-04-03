@@ -44,11 +44,9 @@ public class PlayerMovement : MonoBehaviour
     void OnCollisionEnter2D(Collision2D col)
     {
         isGrounded = true;
-        print("yes");
     }
     void OnCollisionExit2D(Collision2D col)
     {
         isGrounded = false;
-        print("no");
     }
 }
