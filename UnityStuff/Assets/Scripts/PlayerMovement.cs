@@ -4,19 +4,23 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
+    //important
+    private bool boogie = true;
+    private float flowie = 10f;
     //Movement
     public float speed;
     public float jump;
     float moveVelocity;
+    public Rigidbody2D rb;
     //Grounded Vars
-    bool grounded = true;
+    bool isGrounded = true;
     // Update is called once per frame
     void Update()
     {
         //Jumping
         if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.Z) || Input.GetKeyDown(KeyCode.W))
         {
-            if (grounded)
+            if (isGrounded == true)
             {
                 GetComponent<Rigidbody2D>().velocity = new Vector2(GetComponent<Rigidbody2D>().velocity.x, jump);
             }
@@ -37,12 +41,14 @@ public class PlayerMovement : MonoBehaviour
         GetComponent<Rigidbody2D>().velocity = new Vector2(moveVelocity, GetComponent<Rigidbody2D>().velocity.y);
     }
     //Check if Grounded
-    void OnTriggerEnter2D()
+    void OnCollisionEnter2D(Collision2D col)
     {
-        grounded = true;
+        isGrounded = true;
+        print("yes");
     }
-    void OnTriggerExit2D()
+    void OnCollisionExit2D(Collision2D col)
     {
-        grounded = false;
+        isGrounded = false;
+        print("no");
     }
 }
