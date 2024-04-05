@@ -1,16 +1,18 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEditor.Build.Content;
+using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
 public class Enemymovement : MonoBehaviour
 {
-    Rigidbody2D rb;
+    private Rigidbody2D rb;
 
     float moveVelocity;
-    public float speed;
+    public Vector2 speed;
     public float topSpeed;
-    Vector2 velocity;
+    public float acceleration;
+    private Vector2 velocity;
 
     // Start is called before the first frame update
     void Start()
@@ -21,9 +23,9 @@ public class Enemymovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Vector2 move = transform.right * -speed;
-        rb.AddForce(move * Time.deltaTime);
-        velocity = Vector2.ClampMagnitude(topSpeed);
+        velocity += speed * acceleration * Time.deltaTime;
+        velocity = Vector2.ClampMagnitude(velocity, topSpeed);
+        rb.velocity = velocity;
     }
     private void FixedUpdate()
     {

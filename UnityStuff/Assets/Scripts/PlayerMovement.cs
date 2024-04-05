@@ -25,7 +25,10 @@ public class PlayerMovement : MonoBehaviour
                 GetComponent<Rigidbody2D>().velocity = new Vector2(GetComponent<Rigidbody2D>().velocity.x, jump);
             }
         }
-
+        if(boogie == true)
+        {
+            flowie += speed;
+        }
         moveVelocity = 0;
 
         //Left Right Movement
