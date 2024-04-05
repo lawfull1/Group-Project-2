@@ -1315,8 +1315,9 @@ GameObject:
   - component: {fileID: 1243610554}
   - component: {fileID: 1243610553}
   - component: {fileID: 1243610552}
+  - component: {fileID: 1243610556}
   m_Layer: 0
-  m_Name: Square
+  m_Name: Enemy proto
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1393,7 +1394,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!212 &1243610554
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1454,10 +1455,25 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1243610551}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.9851, y: -2.4591, z: 0}
-  m_LocalScale: {x: 1.1697993, y: 2.8961923, z: 1}
+  m_LocalPosition: {x: 6.36, y: -2.52, z: 0}
+  m_LocalScale: {x: 1.1414955, y: 2.782951, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1243610556
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1243610551}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 92bbdf20c88f1cc4798aa0ad55982cf6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: {x: -5, y: 0}
+  topSpeed: 10
+  acceleration: 20
