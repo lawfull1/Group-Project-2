@@ -29,27 +29,23 @@ public class PlayerMovement : MonoBehaviour
         {
             flowie += speed;
         }
-        moveVelocity = 0;
-
-        //Left Right Movement
-        if (Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.A))
-        {
-            moveVelocity = -speed;
-        }
-        if (Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.D))
-        {
-            moveVelocity = speed;
-        }
-
+        moveVelocity = Input.GetAxisRaw("Horizontal") * speed;
         GetComponent<Rigidbody2D>().velocity = new Vector2(moveVelocity, GetComponent<Rigidbody2D>().velocity.y);
     }
     //Check if Grounded
     void OnCollisionEnter2D(Collision2D col)
     {
-        isGrounded = true;
+        if (col.transform.tag == "Ground")
+        {
+            isGrounded = true;
+        }
+        
     }
     void OnCollisionExit2D(Collision2D col)
     {
-        isGrounded = false;
+        if (col.transform.tag == "Ground")
+        {
+            isGrounded = false;
+        }
     }
 }
