@@ -11,7 +11,7 @@ public class FolowChar : MonoBehaviour
     Vector3 velocity = Vector3.zero;
 
     //time to follow target
-    public float smoothTime = .15f;
+    public float flowieTime;
 
 
     void FixedUpdate()
@@ -21,6 +21,6 @@ public class FolowChar : MonoBehaviour
         //align the camera and the target z position
         targetPos.z = transform.position.z;
 
-        transform.position = Vector3.SmoothDamp(transform.position, targetPos, ref velocity, smoothTime);
+        transform.position = Vector3.SmoothDamp(transform.position, targetPos, ref velocity, flowieTime);
     }
 }
