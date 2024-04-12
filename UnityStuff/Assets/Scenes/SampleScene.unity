@@ -229,7 +229,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 1232407044}
-  smoothTime: 0.5
+  flowieTime: 0.1
 --- !u!1 &527560918
 GameObject:
   m_ObjectHideFlags: 0
