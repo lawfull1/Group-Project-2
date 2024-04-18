@@ -44,7 +44,7 @@ public class Enemymovement : MonoBehaviour
         layerMask = ~layerMask;
         RaycastHit hit;
         // Does the ray intersect any objects excluding the player layer
-        if (Physics.Raycast(transform.position, transform.TransformDirection(-Vector2.right), out hit, Mathf.Infinity))
+        if (Physics.Raycast(transform.position, transform.TransformDirection(-Vector2.right), out hit, Mathf.Infinity, layerMask))
         {
             Debug.DrawRay(transform.position, transform.TransformDirection(-Vector2.right) * hit.distance, Color.yellow);
             Debug.Log("Did Hit");

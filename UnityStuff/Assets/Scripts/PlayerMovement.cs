@@ -49,13 +49,3 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 }
-
-//Q is for using abilty
-//f light
-//g heavy
-// combos make bar go up
-// douge-doubble click keys/hold run
-// no jumping for big guy
-// big guy dmg drc atk inc
-// big guy is slower
-//
