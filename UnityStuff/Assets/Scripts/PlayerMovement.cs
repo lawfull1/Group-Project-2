@@ -12,36 +12,33 @@ public class PlayerMovement : MonoBehaviour
     public float jump;
     float moveVelocity;
     public Rigidbody2D rb;
+    public float prePuffySpeed;
+    public float puffySpeed;
+    private int doubleJump;
     //Grounded Vars
     bool isGrounded = true;
-    //Puffy involved stuff (how is this not orginized like what how about you get the brain cells to understand it)
-    public int maxPuffyTime;
-    private int puffyTime;
-    public int puffySpeed;
+    //damage stuff ig git gud
+    public int damage;
     public int puffyDamage;
-    public int puffyHealth;
-    private bool isPuffy; //this one hard to understand?
-    //damage stuff
-    private int damage;
-    private int damageDone;
-    private int maxHealth;
-    private int currentHp;
-    //when puffy is deactivated Im sorry you don't know what a prefix is
-    public int prePuffyHealth;
     public int prePuffyDamage;
-    public int prePuffySpeed;
+    private float DamageDone;
+    //Puffy stuff ig
+    private int puffyTime;
+    public int maxPuffyTime;
+    public int puffyTimeSubtraction;
+    private bool isPuffy;
     // Update is called once per frame
     void Update()
     {
         //Jumping
         if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.Z) || Input.GetKeyDown(KeyCode.W))
         {
-            if (isGrounded == true && isPuffy ==  false)
+            if (isGrounded == true && isPuffy != false && doubleJump < 0)
             {
                 GetComponent<Rigidbody2D>().velocity = new Vector2(GetComponent<Rigidbody2D>().velocity.x, jump);
             }
         }
-        if(boogie == true)
+        if (boogie == true)
         {
             flowie += speed;
         }
@@ -49,9 +46,30 @@ public class PlayerMovement : MonoBehaviour
         GetComponent<Rigidbody2D>().velocity = new Vector2(moveVelocity, GetComponent<Rigidbody2D>().velocity.y);
         if (Input.GetKeyDown(KeyCode.Q))
         {
-            puffyActivated();
+            if (puffyTime > 0)
+            {
+                PuffyActivated();
+            }
         }
-        managePuffy();
+        if (Input.GetKeyDown(KeyCode.Mouse1))
+        {
+            DamageDone = damage;
+            ICanCallThisWhateverIwantyk();
+        }
+       if (Input.GetKeyDown(KeyCode.Mouse2))
+        {
+            DamageDone = damage * 2;
+            ICanCallThisWhateverIwantyk();
+        }
+    }
+    private void ICanCallThisWhateverIwantyk()
+    {
+        //add punch later ig (Idk what Im doing)
+    }
+    void PuffyActivated()
+    {
+            damage = puffyDamage;
+            speed = puffySpeed;
     }
     //Check if Grounded
     void OnCollisionEnter2D(Collision2D col)
@@ -59,6 +77,7 @@ public class PlayerMovement : MonoBehaviour
         if (col.transform.tag == "Ground")
         {
             isGrounded = true;
+            doubleJump = 2;
         }
         
     }
@@ -69,50 +88,14 @@ public class PlayerMovement : MonoBehaviour
             isGrounded = false;
         }
     }
-    private void puffyActivated() 
-    {
-        //sets puffyTime as needed
-        if (puffyTime <= 0)
-        {
-            puffyTime = maxPuffyTime;
-            isPuffy = true;
-            damage = puffyDamage;
-            speed = -1 * puffySpeed; //don't judge the -1 Im to lazy to double check if -puffySpeed would work when you get sprites back
-            maxHealth = puffyHealth;
-        }
-    }
-    private void puffyDeActivated()
-    {
-        damage = prePuffyDamage;
-        speed = prePuffySpeed;
-        maxHealth = prePuffyHealth;
-
-    }
-    private void managePuffy() 
-    {
-        if(puffyTime <= 0)
-        {
-            if (isPuffy == true)
-            {
-                isPuffy = false;
-                print("isPuffy is false (for debugging you monkey)");
-            }
-            puffyDeActivated();
-        }
-    }
-    void fixedUpdate()
-    {
-        puffyTime += -1;
-        print(puffyTime);
-        print("update");
-    }
 }
-//Q is for using abilty
+//Q is for using abilty U
 //f light
 //g heavy
 // combos make bar go up
 // douge-doubble click keys/hold run
-// no jumping for big guy
-// big guy dmg drc atk inc
-// big guy is slower
-//double jump because github desktop is annoying and I have to add all the crap at home for the 3rd time because github desktop keeps overidding it like the dumbass it is
+// no jumping for big guy yes
+// big guy dmg drc atk inc sadasdxzc
+// big guy is slower sadasdsax
+//double jumping :)
+//
