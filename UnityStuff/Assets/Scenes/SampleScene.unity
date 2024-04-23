@@ -1644,13 +1644,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   jump: 7
   rb: {fileID: 0}
+  Jumps: 2
   maxPuffyTime: 10
-  puffySpeed: 5
+  puffySpeed: 0
   puffyDamage: 10
-  puffyHealth: 10
-  prePuffyHealth: 5
+  puffyHealth: 0
+  puffyCooldownSetters: 0
+  prePuffyHealth: 0
   prePuffyDamage: 5
-  prePuffySpeed: 10
+  prePuffySpeed: 0
 --- !u!61 &1232407046
 BoxCollider2D:
   m_ObjectHideFlags: 0

@@ -46,7 +46,7 @@ public class PlayerMovement : MonoBehaviour
                 GetComponent<Rigidbody2D>().velocity = new Vector2(GetComponent<Rigidbody2D>().velocity.x, jump);
             }
         }
-        if(boogie == true)
+        if (boogie == true)
         {
             flowie += speed;
         }
@@ -64,9 +64,10 @@ public class PlayerMovement : MonoBehaviour
     }
     void hit()
     {
-        if(Input.GetKeyDown(KeyCode.Mouse1))
+        if (Input.GetKeyDown(KeyCode.Mouse1))
         {
             damageDone = damage;
+
         }
         if (Input.GetKeyDown(KeyCode.Mouse2))
         {
@@ -81,7 +82,7 @@ public class PlayerMovement : MonoBehaviour
             isGrounded = true;
             Jumps = 2;
         }
-        
+
     }
     void OnCollisionExit2D(Collision2D col)
     {
@@ -90,7 +91,7 @@ public class PlayerMovement : MonoBehaviour
             isGrounded = false;
         }
     }
-    private void puffyActivated() 
+    private void puffyActivated()
     {
         //sets puffyTime as needed
         if (puffyTime <= 0)
@@ -120,9 +121,9 @@ public class PlayerMovement : MonoBehaviour
         }
         print(puffyCooldown);
     }
-    private void managePuffy() 
+    private void managePuffy()
     {
-        if(puffyTime <= 0)
+        if (puffyTime <= 0)
         {
             if (isPuffy == true)
             {
@@ -134,8 +135,8 @@ public class PlayerMovement : MonoBehaviour
     }
 }
 //Q is for using abilty done
-//f light
 //g heavy
+//f light
 // combos make bar go up
 // douge-doubble click keys/hold run
 // no jumping for big guy
