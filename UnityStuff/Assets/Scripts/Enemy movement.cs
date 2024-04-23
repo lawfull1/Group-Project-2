@@ -56,3 +56,45 @@ public class Enemymovement : MonoBehaviour
         }
     }
 }
+
+/*
+ * Player Animations
+ * 0 = idle
+ * 1 = walk
+ * 2 = run
+ * 3 = jump
+ * 4 = punch
+ * 5 = dropkick
+ * 6 = puffy_ACV
+ * 7 = puffy_DACV
+ * 8 = HPunch
+ * 9
+ * 10
+ * 11
+ * 12
+ * 13
+ * 14
+ * 15
+ * <------------------------->
+ * Enemy Animations
+ * 1
+ * 2
+ * 3
+ * 4
+ * 5
+ * 6
+ * 7
+ * 8
+ * 9
+ * 10
+ * 11
+ * 12
+ * 13
+ * 14
+ * 15
+ * <Health Bar>
+ * 
+ * 
+ * 
+ */
+
