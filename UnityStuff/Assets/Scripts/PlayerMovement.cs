@@ -8,7 +8,7 @@ public class PlayerMovement : MonoBehaviour
     private bool boogie = true;
     private float flowie = 10f;
     //Movement
-    private float speed = 10;
+    private float speed;
     public float jump;
     float moveVelocity;
     public Rigidbody2D rb;
@@ -32,7 +32,7 @@ public class PlayerMovement : MonoBehaviour
     //when puffy is deactivated Im sorry you don't know what a prefix is
     public int prePuffyHealth;
     public int prePuffyDamage;
-    public int prePuffySpeed;
+    public int prePuffySpeed = 10;
     private bool isPuffyPrint;
     //Animations and stuff for dumies
     public Animator ani;
@@ -43,10 +43,11 @@ public class PlayerMovement : MonoBehaviour
         //Jumping
         if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.Z) || Input.GetKeyDown(KeyCode.W))
         {
-            ani.SetInteger("Animation_Control", 3);
+            
             if (isGrounded == true && isPuffy == false && Jumps > 0)
             {
-                rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y + jump);
+                ani.SetInteger("Animation_Control", 3);
+                rb.velocity = new Vector2(rb.velocity.y, 0);
                 Jumps--;
             }
         }
@@ -54,7 +55,7 @@ public class PlayerMovement : MonoBehaviour
         {
             flowie += speed;
         }
-        if(Input.GetKeyDown(KeyCode.A)||(Input.GetKeyDown(KeyCode.D)))
+        if (Input.GetKeyDown(KeyCode.A) || (Input.GetKeyDown(KeyCode.D)))
         {
             ani.SetInteger("Animation_Control", 1);
         }
@@ -65,12 +66,13 @@ public class PlayerMovement : MonoBehaviour
             ani.SetInteger("Animation_Control", 6);
             puffyActivated();
             print(puffyTime);
+            
         }
-        managePuffy();
+        
         hit();
         puffyTime += -Time.deltaTime;
         puffyCooldown += -Time.deltaTime;
-        ani.SetInteger("Animation_Control", 0);
+        managePuffy();
     }
     void hit()
     {
@@ -141,10 +143,11 @@ public class PlayerMovement : MonoBehaviour
             {
                 isPuffy = false;
                 print("isPuffy is false (for debugging you monkey)");
-                puffyDeActivated();
+                
             }
-            
+            puffyDeActivated();
         }
+        
     }
 }
 //Q is for using abilty done
