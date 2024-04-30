@@ -43,7 +43,7 @@ public class PlayerMovement : MonoBehaviour
 
         if (!Input.anyKeyDown)
         {
-            ani.SetTrigger("walk");
+            ani.SetTrigger("idle");
         }
 
 
