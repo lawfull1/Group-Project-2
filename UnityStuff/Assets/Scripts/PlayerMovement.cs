@@ -40,6 +40,13 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+        if (!Input.anyKeyDown)
+        {
+            ani.SetTrigger("walk");
+        }
+
+
         //Jumping
         if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.Z) || Input.GetKeyDown(KeyCode.W))
         {
@@ -47,9 +54,10 @@ public class PlayerMovement : MonoBehaviour
             if (isGrounded == true && isPuffy == false && Jumps > 0)
             {
                 ani.SetInteger("Animation_Control", 3);
-                rb.velocity = new Vector2(rb.velocity.y, 0);
+                rb.AddForce(Vector2.up * 5, ForceMode2D.Impulse);
                 Jumps--;
-            }
+                
+           }
         }
         if (boogie == true)
         {
@@ -57,10 +65,11 @@ public class PlayerMovement : MonoBehaviour
         }
         if (Input.GetKeyDown(KeyCode.A) || (Input.GetKeyDown(KeyCode.D)))
         {
-            ani.SetInteger("Animation_Control", 1);
+            ani.SetInteger("Animation_Control", 2);
         }
         moveVelocity = Input.GetAxisRaw("Horizontal") * speed;
-        GetComponent<Rigidbody2D>().velocity = new Vector2(moveVelocity, GetComponent<Rigidbody2D>().velocity.y*speed);
+        GetComponent<Rigidbody2D>().velocity = new Vector2(moveVelocity, GetComponent<Rigidbody2D>().velocity.y);
+
         if (Input.GetKeyDown(KeyCode.Q))
         {
             ani.SetInteger("Animation_Control", 6);
@@ -68,20 +77,28 @@ public class PlayerMovement : MonoBehaviour
             print(puffyTime);
             
         }
-        
+        managePuffy();
         hit();
         puffyTime += -Time.deltaTime;
         puffyCooldown += -Time.deltaTime;
-        managePuffy();
+        if (damage != prePuffyDamage)
+        {
+            damage = prePuffyDamage;
+            speed = prePuffySpeed;
+            maxHealth = prePuffyHealth;
+            puffyCooldown = puffyCooldownSetters;
+            print(puffyCooldown + "puffyCooldown");
+        }
+        
     }
     void hit()
     {
-        if (Input.GetKeyDown(KeyCode.Mouse1))
+        if (Input.GetKeyDown(KeyCode.Mouse0))
         {
             damageDone = damage;
             ani.SetInteger("Animation_Control", 4);
         }
-        if (Input.GetKeyDown(KeyCode.Mouse2))
+        if (Input.GetKeyDown(KeyCode.Mouse1))
         {
             damageDone = damage * 2;
             ani.SetInteger("Animation_Control", 8);
@@ -109,6 +126,7 @@ public class PlayerMovement : MonoBehaviour
         //sets puffyTime as needed
         if (puffyTime <= 0)
         {
+            ani.SetInteger("Animation_Control", 6);
             puffyTime = maxPuffyTime;
             isPuffy = true;
             damage = puffyDamage;
@@ -119,21 +137,15 @@ public class PlayerMovement : MonoBehaviour
     }
     private void puffyDeActivated()
     {
-        if (damage != prePuffyDamage)
-        {
-            damage = prePuffyDamage;
-            speed = prePuffySpeed;
-            maxHealth = prePuffyHealth;
-            puffyCooldown = puffyCooldownSetters;
-            print(puffyCooldown + "puffyCooldown");
-        }
         if (isPuffyPrint == false)
         {
+            
             print("puffy unset");
             isPuffyPrint = true;
+            ani.SetTrigger("puffy devc");
         }
-        print(puffyCooldown);
-        ani.SetInteger("Animation_Control", 7);
+        //print(puffyCooldown);
+        
     }
     private void managePuffy()
     {
@@ -146,6 +158,7 @@ public class PlayerMovement : MonoBehaviour
                 
             }
             puffyDeActivated();
+            
         }
         
     }
