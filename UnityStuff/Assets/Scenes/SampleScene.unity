@@ -1739,13 +1739,13 @@ GameObject:
   - component: {fileID: 1243610553}
   - component: {fileID: 1243610552}
   - component: {fileID: 1243610556}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Enemy proto
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!61 &1243610552
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1900,6 +1900,9 @@ MonoBehaviour:
   speed: {x: -5, y: 0}
   topSpeed: 10
   acceleration: 20
+  payer:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!1 &1533089080
 GameObject:
   m_ObjectHideFlags: 0
