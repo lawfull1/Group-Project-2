@@ -28,7 +28,7 @@ public class Enemymovement : MonoBehaviour
     {
         if (phase == 1)
         {
-            print("woh phase 1");
+            return;
         }
         if (phase == 2)
         {

@@ -34,16 +34,19 @@ public class PlayerMovement : MonoBehaviour
     public int prePuffyDamage;
     public int prePuffySpeed = 10;
     private bool isPuffyPrint;
+
+    public GameObject sprRen;
     //Animations and stuff for dumies
     public Animator ani;
+
+
 
     // Update is called once per frame
     void Update()
     {
-
-        if (!Input.anyKeyDown)
+        if (moveVelocity == 0)
         {
-            ani.SetTrigger("idle");
+            Idle();
         }
 
 
@@ -63,10 +66,20 @@ public class PlayerMovement : MonoBehaviour
         {
             flowie += speed;
         }
-        if (Input.GetKeyDown(KeyCode.A) || (Input.GetKeyDown(KeyCode.D)))
+        if (!(moveVelocity == 0))
         {
             ani.SetInteger("Animation_Control", 2);
+            if (moveVelocity < 0)
+            {
+                sprRen.GetComponent<SpriteRenderer>().flipX = true;
+            }
+            else
+            {
+                sprRen.GetComponent<SpriteRenderer>().flipX = false;
+            }
+
         }
+
         moveVelocity = Input.GetAxisRaw("Horizontal") * speed;
         GetComponent<Rigidbody2D>().velocity = new Vector2(moveVelocity, GetComponent<Rigidbody2D>().velocity.y);
 
@@ -78,7 +91,7 @@ public class PlayerMovement : MonoBehaviour
             
         }
         managePuffy();
-        hit();
+        Hit();
         puffyTime += -Time.deltaTime;
         puffyCooldown += -Time.deltaTime;
         if (damage != prePuffyDamage)
@@ -91,7 +104,8 @@ public class PlayerMovement : MonoBehaviour
         }
         
     }
-    void hit()
+
+    void Hit()
     {
         if (Input.GetKeyDown(KeyCode.Mouse0))
         {
@@ -162,6 +176,19 @@ public class PlayerMovement : MonoBehaviour
         }
         
     }
+
+
+    private void Idle()
+    {
+        
+        ani.SetTrigger("idle");
+        ani.SetInteger("Animation_Control", 0);
+
+    }
+
+
+
+
 }
 //Q is for using abilty done
 //g heavy
