@@ -373,7 +373,7 @@
 -analyzer:"C:/Program Files/Unity 2022.2.19f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
 "Assets/Scripts/Enemy movement.cs"
 "Assets/Scripts/FolowChar.cs"
-"Assets/Scripts/GameControler.cs"
+"Assets/Scripts/GameManager.cs"
 "Assets/Scripts/PlayerMovement.cs"
 -langversion:9.0
 

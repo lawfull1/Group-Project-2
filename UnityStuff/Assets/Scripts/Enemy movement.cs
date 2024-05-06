@@ -17,6 +17,7 @@ public class Enemymovement : MonoBehaviour
     private int phase = 1;
     public LayerMask payer;
     RaycastHit hit;
+    RaycastHit2D rayCast;
     // Start is called before the first frame update
     void Start()
     {
@@ -26,13 +27,17 @@ public class Enemymovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        rayCast = Physics2D.Raycast(gameObject.transform.position, transform.TransformDirection(Vector2.right) * 10f, 100f, payer);
+
+        Debug.Log(rayCast);
+
         if (phase == 1)
         {
             return;
         }
         if (phase == 2)
         {
-            if (Physics.Raycast(transform.position, transform.TransformDirection(Vector2.right), out hit, 5, payer))
+            if (rayCast)
             {
                 Debug.DrawRay(transform.position, transform.TransformDirection(Vector2.right) * hit.distance, Color.yellow);
                 velocity += speed * acceleration * Time.deltaTime;
