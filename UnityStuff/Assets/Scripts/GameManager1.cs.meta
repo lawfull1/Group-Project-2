@@ -1,9 +1,11 @@
 fileFormatVersion: 2
-guid: b3eff1493f0643f489083a6f207c2379
+guid: dc9633ba6bd70114eb5541060d347898
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - plaeyrBox: {instanceID: 0}
+  - enmi: {fileID: 6890171417896752708, guid: 86ae7de409eb54f619fb1328e4d42480, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
