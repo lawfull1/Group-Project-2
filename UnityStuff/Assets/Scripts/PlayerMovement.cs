@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -25,10 +26,12 @@ public class PlayerMovement : MonoBehaviour
     private float puffyCooldown;
     public float puffyCooldownSetters;
     //damage stuff
-    private int damage;
-    private int damageDone;
-    private int maxHealth;
-    private int currentHp;
+    private float damage;
+    private float damageDone;
+    private float maxHealth=1;
+    public Image healthBar;
+    private float currentHp=1;
+    public GameObject punchBox;
     //when puffy is deactivated Im sorry you don't know what a prefix is
     public int prePuffyHealth;
     public int prePuffyDamage;
@@ -49,6 +52,8 @@ public class PlayerMovement : MonoBehaviour
             Idle();
         }
 
+
+        healthBar.fillAmount = currentHp;
 
         //Jumping
         if (Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.Z) || Input.GetKeyDown(KeyCode.W))
@@ -72,10 +77,12 @@ public class PlayerMovement : MonoBehaviour
             if (moveVelocity < 0)
             {
                 sprRen.GetComponent<SpriteRenderer>().flipX = true;
+                punchBox.transform.localPosition = new Vector2(-0.25f, 0);
             }
             else
             {
                 sprRen.GetComponent<SpriteRenderer>().flipX = false;
+                punchBox.transform.localPosition= new Vector2(0.25f, 0);
             }
 
         }
@@ -126,6 +133,11 @@ public class PlayerMovement : MonoBehaviour
             isGrounded = true;
             Jumps = 2;
         }
+        if(col.transform.tag == "enime")
+        {
+            currentHp = 0.01f; 
+            
+        }
 
     }
     void OnCollisionExit2D(Collision2D col)
@@ -133,6 +145,7 @@ public class PlayerMovement : MonoBehaviour
         if (col.transform.tag == "Ground")
         {
             isGrounded = false;
+            
         }
     }
     private void puffyActivated()

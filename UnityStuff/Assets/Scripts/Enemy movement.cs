@@ -14,9 +14,10 @@ public class Enemymovement : MonoBehaviour
     public float topSpeed;
     public float acceleration;
     private Vector2 velocity;
-    private int phase = 1;
+    private int phase = 2;
     public LayerMask payer;
-    RaycastHit hit;
+    public BoxCollider2D Player;
+    RaycastHit2D rayCast1;
     RaycastHit2D rayCast;
     // Start is called before the first frame update
     void Start()
@@ -27,25 +28,34 @@ public class Enemymovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        rayCast = Physics2D.Raycast(gameObject.transform.position, transform.TransformDirection(Vector2.right) * 10f, 100f, payer);
-
-        Debug.Log(rayCast);
-
+        Debug.DrawRay(transform.position+ (new Vector3(0, 0.5f)), transform.TransformDirection(-Vector2.right *10), Color.yellow);
+        rayCast = Physics2D.Raycast(transform.position + (new Vector3(0, 0.5f)), -Vector2.right, 10, payer);
+        rayCast1 = Physics2D.Raycast(transform.position + (new Vector3(0, 0.5f)), Vector2.right, 10, payer);
+        Debug.Log(rayCast.collider != null);
         if (phase == 1)
         {
             return;
         }
         if (phase == 2)
         {
-            if (rayCast)
+            if (rayCast.collider == Player)
             {
-                Debug.DrawRay(transform.position, transform.TransformDirection(Vector2.right) * hit.distance, Color.yellow);
                 velocity += speed * acceleration * Time.deltaTime;
                 velocity = Vector2.ClampMagnitude(velocity, topSpeed);
                 rb.velocity = velocity;
 
+            }else if(rayCast1.collider == Player)
+            {
+                velocity += speed * acceleration * Time.deltaTime;
+                velocity = Vector2.ClampMagnitude(velocity, topSpeed);
+                rb.velocity = -velocity;
+            }
+            else
+            {
+                rb.velocity = new Vector2(0,0);
             }
         }
+
 
     }
 }
@@ -60,8 +70,8 @@ public class Enemymovement : MonoBehaviour
  * 6 = puffy_ACV
  * 7 = puffy_DACV
  * 8 = HPunch
- * 9
- * 10
+ * 9 = Recover
+ * 10 = HardHit
  * 11
  * 12
  * 13
