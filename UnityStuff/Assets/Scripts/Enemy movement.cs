@@ -1,3 +1,4 @@
+using UnityEditorInternal.Profiling.Memory.Experimental;
 using UnityEngine;
 
 public class Enemymovement : MonoBehaviour
@@ -9,7 +10,6 @@ public class Enemymovement : MonoBehaviour
     public float topSpeed;
     public float acceleration;
     private Vector2 velocity;
-    private int phase = 2;
     public LayerMask payer;
     public BoxCollider2D Player;
     RaycastHit2D rayCast1;
@@ -18,20 +18,18 @@ public class Enemymovement : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        Player = GameObject.FindGameObjectWithTag("Player").GetComponent<BoxCollider2D>();
     }
 
     // Update is called once per frame
     void Update()
     {
+        
         Debug.DrawRay(transform.position+ (new Vector3(0, 0.5f)), transform.TransformDirection(-Vector2.right *10), Color.yellow);
         rayCast = Physics2D.Raycast(transform.position + (new Vector3(0, 0.5f)), -Vector2.right, 10, payer);
         rayCast1 = Physics2D.Raycast(transform.position + (new Vector3(0, 0.5f)), Vector2.right, 10, payer);
-        Debug.Log(rayCast.collider != null);
-        if (phase == 1)
-        {
-            return;
-        }
-        if (phase == 2)
+        Debug.Log(rayCast.distance);
+        if (rayCast.distance >= 1 || rayCast1.distance >= 1)
         {
             if (rayCast.collider == Player)
             {
@@ -39,17 +37,20 @@ public class Enemymovement : MonoBehaviour
                 velocity = Vector2.ClampMagnitude(velocity, topSpeed);
                 rb.velocity = velocity;
 
-            }else if(rayCast1.collider == Player)
+            }
+            else if (rayCast1.collider == Player)
             {
                 velocity += speed * acceleration * Time.deltaTime;
                 velocity = Vector2.ClampMagnitude(velocity, topSpeed);
                 rb.velocity = -velocity;
             }
-            else
-            {
-                rb.velocity = new Vector2(0,0);
-            }
+            
         }
+        else if (rayCast.distance <= 1 || rayCast1.distance <= 1)
+        {
+            rb.velocity = new Vector2(0, 0);
+        }
+
 
 
     }
