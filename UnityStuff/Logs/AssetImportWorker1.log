@@ -15,7 +15,7 @@ C:/Users/d3.2n/Documents/GitHub/Group-Project-2/Group-Project-2/UnityStuff
 -logFile
 Logs/AssetImportWorker1.log
 -srvPort
-58183
+57422
 Successfully changed project path to: C:/Users/d3.2n/Documents/GitHub/Group-Project-2/Group-Project-2/UnityStuff
 C:/Users/d3.2n/Documents/GitHub/Group-Project-2/Group-Project-2/UnityStuff
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -47,11 +47,11 @@ C:/Users/d3.2n/Documents/GitHub/Group-Project-2/Group-Project-2/UnityStuff
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [3780] Host "[IP] 10.140.5.175 [Port] 0 [Flags] 2 [Guid] 2879459303 [EditorId] 2879459303 [Version] 1048832 [Id] WindowsEditor(7,S0751DBUSA6-11) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [19408] Host "[IP] 10.140.5.175 [Port] 0 [Flags] 2 [Guid] 3879828126 [EditorId] 3879828126 [Version] 1048832 [Id] WindowsEditor(7,S0751DBUSA6-11) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [3780] Host "[IP] 10.140.5.175 [Port] 0 [Flags] 2 [Guid] 2879459303 [EditorId] 2879459303 [Version] 1048832 [Id] WindowsEditor(7,S0751DBUSA6-11) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [19408] Host "[IP] 10.140.5.175 [Port] 0 [Flags] 2 [Guid] 3879828126 [EditorId] 3879828126 [Version] 1048832 [Id] WindowsEditor(7,S0751DBUSA6-11) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
-Refreshing native plugins compatible for Editor in 8.83 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 8.70 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.2.19f1 (765657fe9343)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity 2022.2.19f1/Editor/Data/Resources/UnitySubsystems
@@ -67,41 +67,41 @@ Initialize mono
 Mono path[0] = 'C:/Program Files/Unity 2022.2.19f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity 2022.2.19f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity 2022.2.19f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56664
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56876
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity 2022.2.19f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.004189 seconds.
-- Loaded All Assemblies, in  0.297 seconds
+Registered in 0.004804 seconds.
+- Loaded All Assemblies, in  0.309 seconds
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.251 seconds
+- Finished resetting the current domain, in  0.264 seconds
 Domain Reload Profiling:
-	ReloadAssembly (172ms)
-		BeginReloadAssembly (76ms)
+	ReloadAssembly (180ms)
+		BeginReloadAssembly (81ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (0ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (1ms)
 		LoadAllAssembliesAndSetupDomain (0ms)
-			LoadAssemblies (74ms)
+			LoadAssemblies (79ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (119ms)
-				TypeCache.Initialize (118ms)
-					TypeCache.ScanAssembly (117ms)
+			SetupTypeCache (123ms)
+				TypeCache.Initialize (122ms)
+					TypeCache.ScanAssembly (121ms)
 				ResolveRequiredComponents (0ms)
 		FinalizeReload (0ms)
 			ReleaseScriptCaches (0ms)
 			RebuildScriptCaches (0ms)
-			SetupLoadedEditorAssemblies (196ms)
+			SetupLoadedEditorAssemblies (206ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (8ms)
-				SetLoadedEditorAssemblies (9ms)
+				SetLoadedEditorAssemblies (8ms)
 				RefreshPlugins (0ms)
 				BeforeProcessingInitializeOnLoad (1ms)
-				ProcessInitializeOnLoadAttributes (133ms)
-				ProcessInitializeOnLoadMethodAttributes (45ms)
+				ProcessInitializeOnLoadAttributes (141ms)
+				ProcessInitializeOnLoadMethodAttributes (47ms)
 				AfterProcessingInitializeOnLoad (0ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
@@ -111,48 +111,48 @@ Worker process is ready to serve import requests
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\d3.2n\Documents\GitHub\Group-Project-2\Group-Project-2\UnityStuff\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\d3.2n\Documents\GitHub\Group-Project-2\Group-Project-2\UnityStuff\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  0.701 seconds
-Refreshing native plugins compatible for Editor in 3.50 ms, found 4 plugins.
+- Loaded All Assemblies, in  0.695 seconds
+Refreshing native plugins compatible for Editor in 3.90 ms, found 4 plugins.
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.515 seconds
+- Finished resetting the current domain, in  0.523 seconds
 Domain Reload Profiling:
-	ReloadAssembly (194ms)
-		BeginReloadAssembly (113ms)
+	ReloadAssembly (211ms)
+		BeginReloadAssembly (122ms)
 			ExecutionOrderSort (0ms)
 			DisableScriptedObjects (5ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (19ms)
-		LoadAllAssembliesAndSetupDomain (504ms)
-			LoadAssemblies (278ms)
+			CreateAndSetChildDomain (21ms)
+		LoadAllAssembliesAndSetupDomain (481ms)
+			LoadAssemblies (257ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (277ms)
-				TypeCache.Initialize (250ms)
-					TypeCache.ScanAssembly (246ms)
-				ResolveRequiredComponents (7ms)
+			SetupTypeCache (279ms)
+				TypeCache.Initialize (256ms)
+					TypeCache.ScanAssembly (252ms)
+				ResolveRequiredComponents (4ms)
 		FinalizeReload (0ms)
 			ReleaseScriptCaches (0ms)
 			RebuildScriptCaches (0ms)
-			SetupLoadedEditorAssemblies (360ms)
+			SetupLoadedEditorAssemblies (374ms)
 				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (4ms)
+				InitializePlatformSupportModulesInManaged (5ms)
 				SetLoadedEditorAssemblies (3ms)
 				RefreshPlugins (0ms)
-				BeforeProcessingInitializeOnLoad (62ms)
-				ProcessInitializeOnLoadAttributes (255ms)
-				ProcessInitializeOnLoadMethodAttributes (31ms)
-				AfterProcessingInitializeOnLoad (4ms)
+				BeforeProcessingInitializeOnLoad (64ms)
+				ProcessInitializeOnLoadAttributes (265ms)
+				ProcessInitializeOnLoadMethodAttributes (32ms)
+				AfterProcessingInitializeOnLoad (5ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
 			AwakeInstancesAfterBackupRestoration (6ms)
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
-Refreshing native plugins compatible for Editor in 3.15 ms, found 4 plugins.
+Refreshing native plugins compatible for Editor in 3.64 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3944 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 62 unused Assets / (43.2 KB). Loaded Objects now: 4415.
+Unloading 62 unused Assets / (43.1 KB). Loaded Objects now: 4415.
 Memory consumption went from 130.2 MB to 130.1 MB.
-Total: 3.423500 ms (FindLiveObjects: 0.285700 ms CreateObjectMapping: 0.229100 ms MarkObjects: 2.829600 ms  DeleteObjects: 0.077600 ms)
+Total: 3.592200 ms (FindLiveObjects: 0.288700 ms CreateObjectMapping: 0.245900 ms MarkObjects: 2.963200 ms  DeleteObjects: 0.093300 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
@@ -168,1020 +168,32 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 273979.591506 seconds.
-  path: Assets/Sprites/vrius/Enemy15.png
-  artifactKey: Guid(0b8f18551d55b714294736857d9da3bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/vrius/Enemy15.png using Guid(0b8f18551d55b714294736857d9da3bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a86de547bb002aa5ed861a2ebf06e953') in 0.082300 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/Sprites/vrius/Enemy27.png
-  artifactKey: Guid(718d9556fff10d2448dc8dfd46be73f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/vrius/Enemy27.png using Guid(718d9556fff10d2448dc8dfd46be73f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '84d1454636e5c8ef5b0c67f2dfe92bf8') in 0.014773 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/Sprites/vrius/Enemy28.png
-  artifactKey: Guid(7065f7b286c5d204e991ed3ff2e6f766) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/vrius/Enemy28.png using Guid(7065f7b286c5d204e991ed3ff2e6f766) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'beca8630191877ad79e706b98d7b163c') in 0.009359 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000034 seconds.
-  path: Assets/Sprites/vrius/Enemy22.png
-  artifactKey: Guid(fabc2a45dd5658941b8b61df20800568) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/vrius/Enemy22.png using Guid(fabc2a45dd5658941b8b61df20800568) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '13c87cc43e13a14fdf298cd262fad02f') in 0.009895 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/Sprites/vrius/Enemy33.png
-  artifactKey: Guid(04fcc50f8bf37e146828ba226e82c8aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/vrius/Enemy33.png using Guid(04fcc50f8bf37e146828ba226e82c8aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6697624d5f6393db984b035a211e1cab') in 0.009709 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000034 seconds.
-  path: Assets/Sprites/vrius/Enemy05.png
-  artifactKey: Guid(bc2459992d446394089c8f67a6efacca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/vrius/Enemy05.png using Guid(bc2459992d446394089c8f67a6efacca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'df80e34b2d866bc3e542d12278d54602') in 0.011101 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/Sprites/vrius/Enemy35.png
-  artifactKey: Guid(20447da244401ed40a2fd2c59e5bbab7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/vrius/Enemy35.png using Guid(20447da244401ed40a2fd2c59e5bbab7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d6f642d6e72f5712bd0b6a59dc7b985') in 0.010721 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000016 seconds.
-  path: Assets/Sprites/vrius/Enemy01.png
-  artifactKey: Guid(b97f95add494d49498a489a02eacd3ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/vrius/Enemy01.png using Guid(b97f95add494d49498a489a02eacd3ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd8969ca9c0128f288a05d12d61a89f1c') in 0.009013 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/Sprites/vrius/Enemy03.png
-  artifactKey: Guid(eb53dc6efe5e7d94886e02b72a18069e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/vrius/Enemy03.png using Guid(eb53dc6efe5e7d94886e02b72a18069e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0a094d3bbe74b82128c505e0a7383fae') in 0.008972 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/Sprites/vrius/Enemy39.png
-  artifactKey: Guid(5161f65efcf797f4ca2552023a392e5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/vrius/Enemy39.png using Guid(5161f65efcf797f4ca2552023a392e5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c1d1c84c99fa18d472c6a720875e0f46') in 0.009404 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/Sprites/vrius/Enemy32.png
-  artifactKey: Guid(df9f4a64a3975d244b3da79cc78f8b23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/vrius/Enemy32.png using Guid(df9f4a64a3975d244b3da79cc78f8b23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e6d3b931639c2f343a873e327cd6d77') in 0.008147 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/Sprites/vrius/Enemy04.png
-  artifactKey: Guid(d1e2e899f5c35274386f4c70365b49ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/vrius/Enemy04.png using Guid(d1e2e899f5c35274386f4c70365b49ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2329b726ba1e6f2fc1e8e9737c076f4d') in 0.008243 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000014 seconds.
-  path: Assets/Sprites/vrius/Enemy06.png
-  artifactKey: Guid(9f41b00708805384fba8fc352c2713b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/vrius/Enemy06.png using Guid(9f41b00708805384fba8fc352c2713b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f8be87ee3d8c01accfdc4d3ffd41224c') in 0.007324 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000021 seconds.
-  path: Assets/Sprites/vrius/Enemy10.png
-  artifactKey: Guid(5fa953da33724994db960e3cdfdad150) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/vrius/Enemy10.png using Guid(5fa953da33724994db960e3cdfdad150) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f69447dda8cd9b82917f21ceadbd9387') in 0.007520 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000020 seconds.
-  path: Assets/Sprites/vrius/Enemy12.png
-  artifactKey: Guid(b8e72ef6359e7c143ad6e6176cb4a6cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/vrius/Enemy12.png using Guid(b8e72ef6359e7c143ad6e6176cb4a6cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e6e7eadfd6bd3ae01727aad3350cb658') in 0.007313 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000016 seconds.
-  path: Assets/Sprites/vrius/Enemy02.png
-  artifactKey: Guid(d93069b9c773b7647b05fb83d460e5c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/vrius/Enemy02.png using Guid(d93069b9c773b7647b05fb83d460e5c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '67363fcc5713055d0809bd366d3ad83e') in 0.008782 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000020 seconds.
-  path: Assets/Sprites/vrius/Enemy00.png
-  artifactKey: Guid(55e83f4120e03da4c96461e5cdb3f9d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/vrius/Enemy00.png using Guid(55e83f4120e03da4c96461e5cdb3f9d3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1f8ff0a434ec283fcd4c77ed3a601bfb') in 0.008387 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000015 seconds.
-  path: Assets/Sprites/vrius/Enemy20.png
-  artifactKey: Guid(48e29413989d74b4b86f327c446dfbc8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/vrius/Enemy20.png using Guid(48e29413989d74b4b86f327c446dfbc8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd5a9ac506a7d262f6d213c1f8ec456ad') in 0.007297 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/Sprites/vrius/Enemy38.png
-  artifactKey: Guid(4d4586dc878c0cf46aca41f15fa9518c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/vrius/Enemy38.png using Guid(4d4586dc878c0cf46aca41f15fa9518c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a6455f6c47c153e4d5eef953ab38fa51') in 0.007690 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 49.786764 seconds.
-  path: Assets/Sprites/vrius/Enemy01.png
-  artifactKey: Guid(b97f95add494d49498a489a02eacd3ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/vrius/Enemy01.png using Guid(b97f95add494d49498a489a02eacd3ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '30fb7b11d2dc31cf42d888cc1806e479') in 0.008690 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/Sprites/vrius/Enemy15.png
-  artifactKey: Guid(0b8f18551d55b714294736857d9da3bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/vrius/Enemy15.png using Guid(0b8f18551d55b714294736857d9da3bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '54b6046254f11b431378972084d238be') in 0.013567 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000050 seconds.
-  path: Assets/Sprites/vrius/Enemy19.png
-  artifactKey: Guid(cfa219c9a8c49d84c8077f9595510640) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/vrius/Enemy19.png using Guid(cfa219c9a8c49d84c8077f9595510640) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fd3ac44658ae8e70c799453d002573db') in 0.010250 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000033 seconds.
-  path: Assets/Sprites/vrius/Enemy25.png
-  artifactKey: Guid(5124fab21d9d60b4da45132e91fed7f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/vrius/Enemy25.png using Guid(5124fab21d9d60b4da45132e91fed7f3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e29e5bf32d4a6724747ea08708799956') in 0.008625 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000061 seconds.
-  path: Assets/Sprites/vrius/Enemy22.png
-  artifactKey: Guid(fabc2a45dd5658941b8b61df20800568) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/vrius/Enemy22.png using Guid(fabc2a45dd5658941b8b61df20800568) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b250b459aa1ce1b9d32be49e3f9611f7') in 0.008009 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000016 seconds.
-  path: Assets/Sprites/vrius/Enemy33.png
-  artifactKey: Guid(04fcc50f8bf37e146828ba226e82c8aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/vrius/Enemy33.png using Guid(04fcc50f8bf37e146828ba226e82c8aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '22c3b23a1080027724417d2edb4a6edc') in 0.009586 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000016 seconds.
-  path: Assets/Sprites/vrius/Enemy05.png
-  artifactKey: Guid(bc2459992d446394089c8f67a6efacca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/vrius/Enemy05.png using Guid(bc2459992d446394089c8f67a6efacca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '24b3e1a0d84a8b83e2ac900afd9c76da') in 0.008425 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000033 seconds.
-  path: Assets/Sprites/vrius/Enemy35.png
-  artifactKey: Guid(20447da244401ed40a2fd2c59e5bbab7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/vrius/Enemy35.png using Guid(20447da244401ed40a2fd2c59e5bbab7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0dc521484fe6b87ed2c67a0f56d9047a') in 0.008462 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000018 seconds.
-  path: Assets/Sprites/vrius/Enemy14.png
-  artifactKey: Guid(4619b61fc2c178d4695bb4d32e8f53d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/vrius/Enemy14.png using Guid(4619b61fc2c178d4695bb4d32e8f53d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eb2ac32b8b547ee182e02f70d2da8517') in 0.009436 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000032 seconds.
-  path: Assets/Sprites/vrius/Enemy03.png
-  artifactKey: Guid(eb53dc6efe5e7d94886e02b72a18069e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/vrius/Enemy03.png using Guid(eb53dc6efe5e7d94886e02b72a18069e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c647432d5ef58447ccaa02cb2e28aa4f') in 0.008304 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000027 seconds.
-  path: Assets/Sprites/vrius/Enemy31.png
-  artifactKey: Guid(f49221689e8630249b22874ad681c04f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/vrius/Enemy31.png using Guid(f49221689e8630249b22874ad681c04f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '974bed222435170e19f24cb03de6b2b9') in 0.011648 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000088 seconds.
-  path: Assets/Sprites/vrius/Enemy34.png
-  artifactKey: Guid(0d339a005a0f4cb4d8760873ecadadf3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/vrius/Enemy34.png using Guid(0d339a005a0f4cb4d8760873ecadadf3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a7221ba5128fc10eae73b8b028836a26') in 0.007363 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000015 seconds.
-  path: Assets/Sprites/vrius/Enemy30.png
-  artifactKey: Guid(f63de5af489885944a87f9147ee56cfa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/vrius/Enemy30.png using Guid(f63de5af489885944a87f9147ee56cfa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '96fc03adad1eb931f6bc77b03ee50a6d') in 0.015335 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000093 seconds.
-  path: Assets/Sprites/vrius/Enemy06.png
-  artifactKey: Guid(9f41b00708805384fba8fc352c2713b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/vrius/Enemy06.png using Guid(9f41b00708805384fba8fc352c2713b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '291e79a3dee371159c2f32cb302d8b4b') in 0.008622 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000131 seconds.
-  path: Assets/Sprites/vrius/Enemy26.png
-  artifactKey: Guid(78230c40a4eac714c8974ac1f6b1004f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/vrius/Enemy26.png using Guid(78230c40a4eac714c8974ac1f6b1004f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6f28e6d790c709791ef522978364d633') in 0.007649 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000112 seconds.
-  path: Assets/Sprites/vrius/Enemy13.png
-  artifactKey: Guid(508354a72214a2942a3c581aee1dcf0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/vrius/Enemy13.png using Guid(508354a72214a2942a3c581aee1dcf0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eed66fdeecd3140b98ba9159c1b278e9') in 0.012039 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000055 seconds.
-  path: Assets/Sprites/vrius/Enemy08.png
-  artifactKey: Guid(c915de3bc52a92d4382eaac5a213a9b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/vrius/Enemy08.png using Guid(c915de3bc52a92d4382eaac5a213a9b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '205dd7691e6b50b9ae408557ca9e79d0') in 0.007748 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000127 seconds.
-  path: Assets/Sprites/vrius/Enemy07.png
-  artifactKey: Guid(84e20d26ddc046e4d8878de2c0f6af3b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/vrius/Enemy07.png using Guid(84e20d26ddc046e4d8878de2c0f6af3b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8c9d3606a78160e3f44744bd29ea051c') in 0.008566 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000120 seconds.
-  path: Assets/Sprites/vrius/Enemy20.png
-  artifactKey: Guid(48e29413989d74b4b86f327c446dfbc8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/vrius/Enemy20.png using Guid(48e29413989d74b4b86f327c446dfbc8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f4eda0feaf6f49639c645021e2b3def2') in 0.011673 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000096 seconds.
-  path: Assets/Sprites/vrius/Enemy36.png
-  artifactKey: Guid(28088dd99a91f3448a45e9fca32e766d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/vrius/Enemy36.png using Guid(28088dd99a91f3448a45e9fca32e766d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ea769ca322aa195069614091c2b85f6') in 0.009168 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 4.482435 seconds.
-  path: Assets/Sprites/vrius/Enemy01.png
-  artifactKey: Guid(b97f95add494d49498a489a02eacd3ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/vrius/Enemy01.png using Guid(b97f95add494d49498a489a02eacd3ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd91cbe66f4d03b0cbd85da61d8a6a823') in 0.010056 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000015 seconds.
-  path: Assets/Sprites/vrius/Enemy15.png
-  artifactKey: Guid(0b8f18551d55b714294736857d9da3bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/vrius/Enemy15.png using Guid(0b8f18551d55b714294736857d9da3bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4963e287ceccc856c41bc213b7649f18') in 0.010487 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000185 seconds.
-  path: Assets/Sprites/vrius/Enemy19.png
-  artifactKey: Guid(cfa219c9a8c49d84c8077f9595510640) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/vrius/Enemy19.png using Guid(cfa219c9a8c49d84c8077f9595510640) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '66d628fca8dc90384c69f4d8bbf69f36') in 0.007981 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000105 seconds.
-  path: Assets/Sprites/vrius/Enemy28.png
-  artifactKey: Guid(7065f7b286c5d204e991ed3ff2e6f766) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/vrius/Enemy28.png using Guid(7065f7b286c5d204e991ed3ff2e6f766) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '847b5e6b0501396863810d7640605999') in 0.008025 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000016 seconds.
-  path: Assets/Sprites/vrius/Enemy29.png
-  artifactKey: Guid(3b6b67938f20f2044af487f065f6eb02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/vrius/Enemy29.png using Guid(3b6b67938f20f2044af487f065f6eb02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '92639055a9c5bc6ae979a629c2236504') in 0.009809 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000043 seconds.
-  path: Assets/Sprites/vrius/Enemy23.png
-  artifactKey: Guid(0be73c10ae4ead7488387561dd1a2939) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/vrius/Enemy23.png using Guid(0be73c10ae4ead7488387561dd1a2939) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5a652eec70ac7b52f7aa54c6e7a3918b') in 0.008202 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000031 seconds.
-  path: Assets/Sprites/vrius/Enemy05.png
-  artifactKey: Guid(bc2459992d446394089c8f67a6efacca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/vrius/Enemy05.png using Guid(bc2459992d446394089c8f67a6efacca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '14783004272f4b5943b81ee68d35e284') in 0.009831 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000013 seconds.
-  path: Assets/Sprites/vrius/Enemy35.png
-  artifactKey: Guid(20447da244401ed40a2fd2c59e5bbab7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/vrius/Enemy35.png using Guid(20447da244401ed40a2fd2c59e5bbab7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ec99090b98567cb26012ebe1664d04ae') in 0.011241 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000016 seconds.
-  path: Assets/Sprites/vrius/Enemy37.png
-  artifactKey: Guid(4558a792243861148a43a4af5ba16bce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/vrius/Enemy37.png using Guid(4558a792243861148a43a4af5ba16bce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '364ac2fc13730b8451a6bb7756c94aca') in 0.007574 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000069 seconds.
-  path: Assets/Sprites/vrius/Enemy39.png
-  artifactKey: Guid(5161f65efcf797f4ca2552023a392e5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/vrius/Enemy39.png using Guid(5161f65efcf797f4ca2552023a392e5c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '58b380f29d2f462c22c5e83b672e2ad2') in 0.007672 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000121 seconds.
-  path: Assets/Sprites/vrius/Enemy18.png
-  artifactKey: Guid(81f59b164aee6e44b9b16e125da76e4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/vrius/Enemy18.png using Guid(81f59b164aee6e44b9b16e125da76e4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '16ac65f8067ff3ab3eef022eea3d27db') in 0.012869 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000038 seconds.
-  path: Assets/Sprites/vrius/Enemy32.png
-  artifactKey: Guid(df9f4a64a3975d244b3da79cc78f8b23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/vrius/Enemy32.png using Guid(df9f4a64a3975d244b3da79cc78f8b23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '53120e826cdbf40b52b3699b3c7dcc8a') in 0.007424 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000100 seconds.
-  path: Assets/Sprites/vrius/Enemy04.png
-  artifactKey: Guid(d1e2e899f5c35274386f4c70365b49ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/vrius/Enemy04.png using Guid(d1e2e899f5c35274386f4c70365b49ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '208e9061f2f04fd6e5663815385a4013') in 0.007565 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000015 seconds.
-  path: Assets/Sprites/vrius/Enemy24.png
-  artifactKey: Guid(93112f1e2a4c8784faf68aac382db79b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/vrius/Enemy24.png using Guid(93112f1e2a4c8784faf68aac382db79b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a7f51c4521fc3eacb98e0bfda5e31f87') in 0.014771 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000066 seconds.
-  path: Assets/Sprites/vrius/Enemy26.png
-  artifactKey: Guid(78230c40a4eac714c8974ac1f6b1004f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/vrius/Enemy26.png using Guid(78230c40a4eac714c8974ac1f6b1004f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '617df0d1174de8ae47dc72b82d53147c') in 0.007581 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000057 seconds.
-  path: Assets/Sprites/vrius/Enemy13.png
-  artifactKey: Guid(508354a72214a2942a3c581aee1dcf0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/vrius/Enemy13.png using Guid(508354a72214a2942a3c581aee1dcf0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7c9fc4e75cf1daf21f838722ea86fc3c') in 0.007413 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000011 seconds.
-  path: Assets/Sprites/vrius/Enemy08.png
-  artifactKey: Guid(c915de3bc52a92d4382eaac5a213a9b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/vrius/Enemy08.png using Guid(c915de3bc52a92d4382eaac5a213a9b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0a3e0291f9421bda4b1a37b80601c65a') in 0.009833 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000016 seconds.
-  path: Assets/Sprites/vrius/Enemy07.png
-  artifactKey: Guid(84e20d26ddc046e4d8878de2c0f6af3b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/vrius/Enemy07.png using Guid(84e20d26ddc046e4d8878de2c0f6af3b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f30907bc14b311141838462b2782e0e8') in 0.007904 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000130 seconds.
-  path: Assets/Sprites/vrius/Enemy38.png
-  artifactKey: Guid(4d4586dc878c0cf46aca41f15fa9518c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/vrius/Enemy38.png using Guid(4d4586dc878c0cf46aca41f15fa9518c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2fabbcdc55048c2c41642ffb80bf5320') in 0.009504 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 6.609967 seconds.
-  path: Assets/Sprites/vrius/Enemy01.png
-  artifactKey: Guid(b97f95add494d49498a489a02eacd3ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/vrius/Enemy01.png using Guid(b97f95add494d49498a489a02eacd3ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a243aed2115eb0c8c9cf0083e28bea71') in 0.008607 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000015 seconds.
-  path: Assets/Sprites/vrius/Enemy15.png
-  artifactKey: Guid(0b8f18551d55b714294736857d9da3bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/vrius/Enemy15.png using Guid(0b8f18551d55b714294736857d9da3bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7bb49ed1c071e2408e675bd2ad7ec040') in 0.007795 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000093 seconds.
-  path: Assets/Sprites/vrius/Enemy27.png
-  artifactKey: Guid(718d9556fff10d2448dc8dfd46be73f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/vrius/Enemy27.png using Guid(718d9556fff10d2448dc8dfd46be73f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eb920ad881f87078fdb6fb6bda32c31d') in 0.007620 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000028 seconds.
-  path: Assets/Sprites/vrius/Enemy28.png
-  artifactKey: Guid(7065f7b286c5d204e991ed3ff2e6f766) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/vrius/Enemy28.png using Guid(7065f7b286c5d204e991ed3ff2e6f766) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2cc418456fba8fc5854a3577aa20f1a9') in 0.007671 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000015 seconds.
-  path: Assets/Sprites/vrius/Enemy29.png
-  artifactKey: Guid(3b6b67938f20f2044af487f065f6eb02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/vrius/Enemy29.png using Guid(3b6b67938f20f2044af487f065f6eb02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '28a1632ddef1de447a7d443e9bbc40db') in 0.007994 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000016 seconds.
-  path: Assets/Sprites/vrius/Enemy23.png
-  artifactKey: Guid(0be73c10ae4ead7488387561dd1a2939) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/vrius/Enemy23.png using Guid(0be73c10ae4ead7488387561dd1a2939) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5b62bfccf2b1938ea143ddbc0c5a3ded') in 0.009098 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000033 seconds.
-  path: Assets/Sprites/vrius/Enemy09.png
-  artifactKey: Guid(21aae3a6bf1fe8e46b4bbe4ebc5a3bcf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/vrius/Enemy09.png using Guid(21aae3a6bf1fe8e46b4bbe4ebc5a3bcf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8ee8c33cbf891373876d375fb6d9c2a9') in 0.007549 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000033 seconds.
-  path: Assets/Sprites/vrius/Enemy16.png
-  artifactKey: Guid(1f97b54b1d2bea24094274ff8cb36ea9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/vrius/Enemy16.png using Guid(1f97b54b1d2bea24094274ff8cb36ea9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ec6aa788c447c89e0675683d15ef6c81') in 0.009310 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000040 seconds.
-  path: Assets/Sprites/vrius/Enemy14.png
-  artifactKey: Guid(4619b61fc2c178d4695bb4d32e8f53d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/vrius/Enemy14.png using Guid(4619b61fc2c178d4695bb4d32e8f53d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '21839ecba30da86377133715c84b51e5') in 0.008379 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000031 seconds.
-  path: Assets/Sprites/vrius/Enemy03.png
-  artifactKey: Guid(eb53dc6efe5e7d94886e02b72a18069e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/vrius/Enemy03.png using Guid(eb53dc6efe5e7d94886e02b72a18069e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '76789eaa145a933d66dd2b7bfb575026') in 0.008434 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000015 seconds.
-  path: Assets/Sprites/vrius/Enemy18.png
-  artifactKey: Guid(81f59b164aee6e44b9b16e125da76e4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/vrius/Enemy18.png using Guid(81f59b164aee6e44b9b16e125da76e4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1b068a8868b27a41b5ae6eef07e00ea2') in 0.007719 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000099 seconds.
-  path: Assets/Sprites/vrius/Enemy34.png
-  artifactKey: Guid(0d339a005a0f4cb4d8760873ecadadf3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/vrius/Enemy34.png using Guid(0d339a005a0f4cb4d8760873ecadadf3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '54890d3f9b623708bb0220ca9d3d11f4') in 0.007539 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000015 seconds.
-  path: Assets/Sprites/vrius/Enemy04.png
-  artifactKey: Guid(d1e2e899f5c35274386f4c70365b49ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/vrius/Enemy04.png using Guid(d1e2e899f5c35274386f4c70365b49ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd21ef0553b08b24d63a2e229c99d8686') in 0.010937 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000115 seconds.
-  path: Assets/Sprites/vrius/Enemy06.png
-  artifactKey: Guid(9f41b00708805384fba8fc352c2713b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/vrius/Enemy06.png using Guid(9f41b00708805384fba8fc352c2713b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '62a2a61580626bf9ece2ce30f6192803') in 0.007462 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000123 seconds.
-  path: Assets/Sprites/vrius/Enemy26.png
-  artifactKey: Guid(78230c40a4eac714c8974ac1f6b1004f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/vrius/Enemy26.png using Guid(78230c40a4eac714c8974ac1f6b1004f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f50d57ae52b402477665d424a2a69741') in 0.007080 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000012 seconds.
-  path: Assets/Sprites/vrius/Enemy13.png
-  artifactKey: Guid(508354a72214a2942a3c581aee1dcf0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/vrius/Enemy13.png using Guid(508354a72214a2942a3c581aee1dcf0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7b00b288b0ad2e55da9087cb4deab317') in 0.007412 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000014 seconds.
-  path: Assets/Sprites/vrius/Enemy02.png
-  artifactKey: Guid(d93069b9c773b7647b05fb83d460e5c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/vrius/Enemy02.png using Guid(d93069b9c773b7647b05fb83d460e5c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '82255145772387f7182896d7b93166a9') in 0.010951 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000057 seconds.
-  path: Assets/Sprites/vrius/Enemy11.png
-  artifactKey: Guid(6834d35e6ba68514b87cd0fa7435298a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/vrius/Enemy11.png using Guid(6834d35e6ba68514b87cd0fa7435298a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6dca946049ba83725946e026ba41578d') in 0.007607 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000011 seconds.
-  path: Assets/Sprites/vrius/Enemy20.png
-  artifactKey: Guid(48e29413989d74b4b86f327c446dfbc8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/vrius/Enemy20.png using Guid(48e29413989d74b4b86f327c446dfbc8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '19fd8a39c3c26ebe79f72a5f45c5212a') in 0.007500 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000012 seconds.
-  path: Assets/Sprites/vrius/Enemy36.png
-  artifactKey: Guid(28088dd99a91f3448a45e9fca32e766d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/vrius/Enemy36.png using Guid(28088dd99a91f3448a45e9fca32e766d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '87ed75a157c3935fbdb53bdc9939d6b4') in 0.013623 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 7.355056 seconds.
-  path: Assets/Sprites/vrius/Enemy01.png
-  artifactKey: Guid(b97f95add494d49498a489a02eacd3ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/vrius/Enemy01.png using Guid(b97f95add494d49498a489a02eacd3ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ceab05d652cb881686f938748267f8ed') in 0.007728 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000014 seconds.
-  path: Assets/Sprites/vrius/Enemy17.png
-  artifactKey: Guid(2b4aa215ee57e76479cb97dd5484af19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/vrius/Enemy17.png using Guid(2b4aa215ee57e76479cb97dd5484af19) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8bc437b0ea0711d8e82542ba65ad3915') in 0.015037 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000054 seconds.
-  path: Assets/Sprites/vrius/Enemy27.png
-  artifactKey: Guid(718d9556fff10d2448dc8dfd46be73f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/vrius/Enemy27.png using Guid(718d9556fff10d2448dc8dfd46be73f0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3aa73a0ae6faad4b2a1ee3af4d452fd5') in 0.010535 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000016 seconds.
-  path: Assets/Sprites/vrius/Enemy28.png
-  artifactKey: Guid(7065f7b286c5d204e991ed3ff2e6f766) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/vrius/Enemy28.png using Guid(7065f7b286c5d204e991ed3ff2e6f766) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3954ab3d0f333ad21c6c5994d019fdcc') in 0.009716 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000096 seconds.
-  path: Assets/Sprites/vrius/Enemy22.png
-  artifactKey: Guid(fabc2a45dd5658941b8b61df20800568) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/vrius/Enemy22.png using Guid(fabc2a45dd5658941b8b61df20800568) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5877a3edf6e41c95957cb322cf587228') in 0.010419 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000016 seconds.
-  path: Assets/Sprites/vrius/Enemy33.png
-  artifactKey: Guid(04fcc50f8bf37e146828ba226e82c8aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/vrius/Enemy33.png using Guid(04fcc50f8bf37e146828ba226e82c8aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '600c9f28fac83ab4c2680d8a2c032063') in 0.012468 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000015 seconds.
-  path: Assets/Sprites/vrius/Enemy09.png
-  artifactKey: Guid(21aae3a6bf1fe8e46b4bbe4ebc5a3bcf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/vrius/Enemy09.png using Guid(21aae3a6bf1fe8e46b4bbe4ebc5a3bcf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b95e6038ad2d1ffcf6a683e1bafa232a') in 0.010049 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000033 seconds.
-  path: Assets/Sprites/vrius/Enemy16.png
-  artifactKey: Guid(1f97b54b1d2bea24094274ff8cb36ea9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/vrius/Enemy16.png using Guid(1f97b54b1d2bea24094274ff8cb36ea9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5269cff44f7af4a47b5f412fd7b488dd') in 0.009482 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000012 seconds.
-  path: Assets/Sprites/vrius/Enemy14.png
-  artifactKey: Guid(4619b61fc2c178d4695bb4d32e8f53d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/vrius/Enemy14.png using Guid(4619b61fc2c178d4695bb4d32e8f53d6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da15a2c20b6a54331f95bc0dfc2131f4') in 0.016821 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000139 seconds.
-  path: Assets/Sprites/vrius/Enemy03.png
-  artifactKey: Guid(eb53dc6efe5e7d94886e02b72a18069e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/vrius/Enemy03.png using Guid(eb53dc6efe5e7d94886e02b72a18069e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9ad6f37d001109ad811055c7fbf6a1ea') in 0.008802 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000043 seconds.
-  path: Assets/Sprites/vrius/Enemy31.png
-  artifactKey: Guid(f49221689e8630249b22874ad681c04f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/vrius/Enemy31.png using Guid(f49221689e8630249b22874ad681c04f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '65d04ef32b115ce66278a881fb250624') in 0.008131 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000014 seconds.
-  path: Assets/Sprites/vrius/Enemy32.png
-  artifactKey: Guid(df9f4a64a3975d244b3da79cc78f8b23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/vrius/Enemy32.png using Guid(df9f4a64a3975d244b3da79cc78f8b23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '831e3522da81f1d44c3be09e47209599') in 0.019730 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/Sprites/vrius/Enemy30.png
-  artifactKey: Guid(f63de5af489885944a87f9147ee56cfa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/vrius/Enemy30.png using Guid(f63de5af489885944a87f9147ee56cfa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '499d11afa36cce0327f323902dcf843c') in 0.008308 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000014 seconds.
-  path: Assets/Sprites/vrius/Enemy06.png
-  artifactKey: Guid(9f41b00708805384fba8fc352c2713b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/vrius/Enemy06.png using Guid(9f41b00708805384fba8fc352c2713b9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0c86bb5398d059d8bd5f670852fb0a94') in 0.007407 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000015 seconds.
-  path: Assets/Sprites/vrius/Enemy26.png
-  artifactKey: Guid(78230c40a4eac714c8974ac1f6b1004f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/vrius/Enemy26.png using Guid(78230c40a4eac714c8974ac1f6b1004f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4c91d89c408d4904f7cdda0d744f9c6') in 0.010106 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/Sprites/vrius/Enemy13.png
-  artifactKey: Guid(508354a72214a2942a3c581aee1dcf0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/vrius/Enemy13.png using Guid(508354a72214a2942a3c581aee1dcf0c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd87b8f36b0925ea73f6991682fcee7aa') in 0.007530 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000016 seconds.
-  path: Assets/Sprites/vrius/Enemy08.png
-  artifactKey: Guid(c915de3bc52a92d4382eaac5a213a9b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/vrius/Enemy08.png using Guid(c915de3bc52a92d4382eaac5a213a9b7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2d3e34b9681a3a912b47bd43666895e8') in 0.007644 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000024 seconds.
-  path: Assets/Sprites/vrius/Enemy07.png
-  artifactKey: Guid(84e20d26ddc046e4d8878de2c0f6af3b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/vrius/Enemy07.png using Guid(84e20d26ddc046e4d8878de2c0f6af3b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '38369c319c1622a6e585a4cdcf89b96a') in 0.007109 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000014 seconds.
-  path: Assets/Sprites/vrius/Enemy21.png
-  artifactKey: Guid(f569b14b727cefb4ab65735b995e8b82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/vrius/Enemy21.png using Guid(f569b14b727cefb4ab65735b995e8b82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6616d261a248912892e6336a910e0c1d') in 0.010836 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 3.787438 seconds.
-  path: Assets/Sprites/vrius/Enemy01.png
-  artifactKey: Guid(b97f95add494d49498a489a02eacd3ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/vrius/Enemy01.png using Guid(b97f95add494d49498a489a02eacd3ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ebc8c18674329162ad91a6214bcb91b5') in 0.008644 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000109 seconds.
-  path: Assets/Sprites/vrius/Enemy15.png
-  artifactKey: Guid(0b8f18551d55b714294736857d9da3bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/vrius/Enemy15.png using Guid(0b8f18551d55b714294736857d9da3bf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '99257bbb4f7491f7e5922827056aac18') in 0.013483 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000014 seconds.
-  path: Assets/Sprites/vrius/Enemy19.png
-  artifactKey: Guid(cfa219c9a8c49d84c8077f9595510640) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/vrius/Enemy19.png using Guid(cfa219c9a8c49d84c8077f9595510640) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6e0361887821ab503ce3750fddc78d08') in 0.007923 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000012 seconds.
-  path: Assets/Sprites/vrius/Enemy28.png
-  artifactKey: Guid(7065f7b286c5d204e991ed3ff2e6f766) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/vrius/Enemy28.png using Guid(7065f7b286c5d204e991ed3ff2e6f766) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e787ba32a48563cb57476d471b252b0e') in 0.009474 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000030 seconds.
-  path: Assets/Sprites/vrius/Enemy29.png
-  artifactKey: Guid(3b6b67938f20f2044af487f065f6eb02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/vrius/Enemy29.png using Guid(3b6b67938f20f2044af487f065f6eb02) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f33ba57918f53dca814a5873f5cba43d') in 0.013860 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000022 seconds.
-  path: Assets/Sprites/vrius/Enemy33.png
-  artifactKey: Guid(04fcc50f8bf37e146828ba226e82c8aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/vrius/Enemy33.png using Guid(04fcc50f8bf37e146828ba226e82c8aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a13fc2120e1b5139980810861430c0a2') in 0.009881 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000046 seconds.
-  path: Assets/Sprites/vrius/Enemy05.png
-  artifactKey: Guid(bc2459992d446394089c8f67a6efacca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/vrius/Enemy05.png using Guid(bc2459992d446394089c8f67a6efacca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '09b757cc18a66b8bc40bae9d3d177ef2') in 0.008548 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000016 seconds.
-  path: Assets/Sprites/vrius/Enemy35.png
-  artifactKey: Guid(20447da244401ed40a2fd2c59e5bbab7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/vrius/Enemy35.png using Guid(20447da244401ed40a2fd2c59e5bbab7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '95b25ee43e3cc21c0e7b7697d43ba059') in 0.008602 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000082 seconds.
-  path: Assets/Sprites/vrius/Enemy37.png
-  artifactKey: Guid(4558a792243861148a43a4af5ba16bce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/vrius/Enemy37.png using Guid(4558a792243861148a43a4af5ba16bce) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f2824b63ebb16ed684a62582e10e1736') in 0.009265 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000014 seconds.
-  path: Assets/Sprites/vrius/Enemy03.png
-  artifactKey: Guid(eb53dc6efe5e7d94886e02b72a18069e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/vrius/Enemy03.png using Guid(eb53dc6efe5e7d94886e02b72a18069e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee9d8cc1fd178fa8aa16ccae49ca0730') in 0.009447 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000033 seconds.
-  path: Assets/Sprites/vrius/Enemy18.png
-  artifactKey: Guid(81f59b164aee6e44b9b16e125da76e4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/vrius/Enemy18.png using Guid(81f59b164aee6e44b9b16e125da76e4c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '31b901c85f102382464d3b176e3ab564') in 0.008405 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000013 seconds.
-  path: Assets/Sprites/vrius/Enemy32.png
-  artifactKey: Guid(df9f4a64a3975d244b3da79cc78f8b23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/vrius/Enemy32.png using Guid(df9f4a64a3975d244b3da79cc78f8b23) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a0056ba70d25d5b861904b7a38bed9fa') in 0.009448 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000053 seconds.
-  path: Assets/Sprites/vrius/Enemy04.png
-  artifactKey: Guid(d1e2e899f5c35274386f4c70365b49ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/vrius/Enemy04.png using Guid(d1e2e899f5c35274386f4c70365b49ff) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dcf39afbfc8fd85fc2da6d92be123c8e') in 0.010380 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000055 seconds.
-  path: Assets/Sprites/vrius/Enemy24.png
-  artifactKey: Guid(93112f1e2a4c8784faf68aac382db79b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/vrius/Enemy24.png using Guid(93112f1e2a4c8784faf68aac382db79b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0c95509de229b3bfd7a989d1595d7c44') in 0.008162 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000019 seconds.
-  path: Assets/Sprites/vrius/Enemy10.png
-  artifactKey: Guid(5fa953da33724994db960e3cdfdad150) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/vrius/Enemy10.png using Guid(5fa953da33724994db960e3cdfdad150) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ee5e1dc3484885d1598581131f5779cf') in 0.007888 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000016 seconds.
-  path: Assets/Sprites/vrius/Enemy12.png
-  artifactKey: Guid(b8e72ef6359e7c143ad6e6176cb4a6cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/vrius/Enemy12.png using Guid(b8e72ef6359e7c143ad6e6176cb4a6cd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cbd32b89a0a2c5c46e04907d0eeb523d') in 0.009047 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000017 seconds.
-  path: Assets/Sprites/vrius/Enemy02.png
-  artifactKey: Guid(d93069b9c773b7647b05fb83d460e5c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/vrius/Enemy02.png using Guid(d93069b9c773b7647b05fb83d460e5c4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '55afbb26ff97da598d4d7460308f35ea') in 0.007760 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000016 seconds.
-  path: Assets/Sprites/vrius/Enemy11.png
-  artifactKey: Guid(6834d35e6ba68514b87cd0fa7435298a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/vrius/Enemy11.png using Guid(6834d35e6ba68514b87cd0fa7435298a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '80c99f8aee02b2cb14935fc4438e9aa0') in 0.008022 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000016 seconds.
-  path: Assets/Sprites/vrius/Enemy38.png
-  artifactKey: Guid(4d4586dc878c0cf46aca41f15fa9518c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/vrius/Enemy38.png using Guid(4d4586dc878c0cf46aca41f15fa9518c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '18cc6b1f0580a235edd14d54841279f3') in 0.007709 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
-========================================================================
-Received Import Request.
-  Time since last request: 0.000014 seconds.
-  path: Assets/Sprites/vrius/Enemy21.png
-  artifactKey: Guid(f569b14b727cefb4ab65735b995e8b82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Sprites/vrius/Enemy21.png using Guid(f569b14b727cefb4ab65735b995e8b82) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '61159ca4f366b94088281f42fc63e715') in 0.009997 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 3
+  Time since last request: 358264.979485 seconds.
+  path: Assets/Enemy proto.prefab
+  artifactKey: Guid(9d41afce9f44c1f4190ca2c1f6a7ebab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Enemy proto.prefab using Guid(9d41afce9f44c1f4190ca2c1f6a7ebab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3bde70faa30f3f1f5ee1467cf196076a') in 0.114547 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 152
 ========================================================================
 Received Prepare
 Begin MonoManager ReloadAssembly
 Symbol file LoadedFromMemory doesn't match image C:\Users\d3.2n\Documents\GitHub\Group-Project-2\Group-Project-2\UnityStuff\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
 Symbol file LoadedFromMemory doesn't match image C:\Users\d3.2n\Documents\GitHub\Group-Project-2\Group-Project-2\UnityStuff\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  0.613 seconds
-Refreshing native plugins compatible for Editor in 3.43 ms, found 4 plugins.
+- Loaded All Assemblies, in  0.657 seconds
+Refreshing native plugins compatible for Editor in 3.36 ms, found 4 plugins.
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.910 seconds
+- Finished resetting the current domain, in  0.748 seconds
 Domain Reload Profiling:
-	ReloadAssembly (202ms)
-		BeginReloadAssembly (133ms)
+	ReloadAssembly (230ms)
+		BeginReloadAssembly (142ms)
 			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (11ms)
+			DisableScriptedObjects (10ms)
 			BackupInstance (0ms)
 			ReleaseScriptingObjects (0ms)
 			CreateAndSetChildDomain (36ms)
-		LoadAllAssembliesAndSetupDomain (408ms)
-			LoadAssemblies (217ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (244ms)
-				TypeCache.Initialize (239ms)
-					TypeCache.ScanAssembly (233ms)
-				ResolveRequiredComponents (5ms)
-		FinalizeReload (0ms)
-			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (0ms)
-			SetupLoadedEditorAssemblies (388ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (6ms)
-				SetLoadedEditorAssemblies (4ms)
-				RefreshPlugins (0ms)
-				BeforeProcessingInitializeOnLoad (75ms)
-				ProcessInitializeOnLoadAttributes (265ms)
-				ProcessInitializeOnLoadMethodAttributes (33ms)
-				AfterProcessingInitializeOnLoad (6ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (15ms)
-Refreshing native plugins compatible for Editor in 3.89 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3932 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 35 unused Assets / (34.7 KB). Loaded Objects now: 4426.
-Memory consumption went from 132.2 MB to 132.2 MB.
-Total: 3.217800 ms (FindLiveObjects: 0.286900 ms CreateObjectMapping: 0.252800 ms MarkObjects: 2.625800 ms  DeleteObjects: 0.051500 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\d3.2n\Documents\GitHub\Group-Project-2\Group-Project-2\UnityStuff\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\d3.2n\Documents\GitHub\Group-Project-2\Group-Project-2\UnityStuff\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  0.612 seconds
-Refreshing native plugins compatible for Editor in 4.18 ms, found 4 plugins.
-Native extension for WindowsStandalone target not found
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.951 seconds
-Domain Reload Profiling:
-	ReloadAssembly (195ms)
-		BeginReloadAssembly (130ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (12ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (36ms)
-		LoadAllAssembliesAndSetupDomain (414ms)
-			LoadAssemblies (224ms)
+		LoadAllAssembliesAndSetupDomain (423ms)
+			LoadAssemblies (246ms)
 			RebuildTransferFunctionScriptingTraits (0ms)
 			SetupTypeCache (239ms)
 				TypeCache.Initialize (235ms)
@@ -1190,84 +202,24 @@ Domain Reload Profiling:
 		FinalizeReload (0ms)
 			ReleaseScriptCaches (0ms)
 			RebuildScriptCaches (0ms)
-			SetupLoadedEditorAssemblies (408ms)
-				LogAssemblyErrors (0ms)
-				InitializePlatformSupportModulesInManaged (6ms)
-				SetLoadedEditorAssemblies (4ms)
-				RefreshPlugins (0ms)
-				BeforeProcessingInitializeOnLoad (79ms)
-				ProcessInitializeOnLoadAttributes (280ms)
-				ProcessInitializeOnLoadMethodAttributes (34ms)
-				AfterProcessingInitializeOnLoad (6ms)
-				EditorAssembliesLoaded (0ms)
-			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (15ms)
-Refreshing native plugins compatible for Editor in 4.68 ms, found 4 plugins.
-Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3933 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 35 unused Assets / (42.1 KB). Loaded Objects now: 4430.
-Memory consumption went from 132.5 MB to 132.4 MB.
-Total: 3.510200 ms (FindLiveObjects: 0.317100 ms CreateObjectMapping: 0.302300 ms MarkObjects: 2.799400 ms  DeleteObjects: 0.090500 ms)
-
-Prepare: number of updated asset objects reloaded= 0
-AssetImportParameters requested are different than current active one (requested -> active):
-  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
-  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
-  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
-  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
-  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
-  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
-  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
-  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
-  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
-  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Prepare
-Begin MonoManager ReloadAssembly
-Symbol file LoadedFromMemory doesn't match image C:\Users\d3.2n\Documents\GitHub\Group-Project-2\Group-Project-2\UnityStuff\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
-Symbol file LoadedFromMemory doesn't match image C:\Users\d3.2n\Documents\GitHub\Group-Project-2\Group-Project-2\UnityStuff\Library\PackageCache\com.unity.visualscripting@1.8.0\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
-- Loaded All Assemblies, in  0.615 seconds
-Refreshing native plugins compatible for Editor in 3.55 ms, found 4 plugins.
-Native extension for WindowsStandalone target not found
-Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.837 seconds
-Domain Reload Profiling:
-	ReloadAssembly (196ms)
-		BeginReloadAssembly (129ms)
-			ExecutionOrderSort (0ms)
-			DisableScriptedObjects (11ms)
-			BackupInstance (0ms)
-			ReleaseScriptingObjects (0ms)
-			CreateAndSetChildDomain (34ms)
-		LoadAllAssembliesAndSetupDomain (417ms)
-			LoadAssemblies (231ms)
-			RebuildTransferFunctionScriptingTraits (0ms)
-			SetupTypeCache (236ms)
-				TypeCache.Initialize (231ms)
-					TypeCache.ScanAssembly (226ms)
-				ResolveRequiredComponents (4ms)
-		FinalizeReload (0ms)
-			ReleaseScriptCaches (0ms)
-			RebuildScriptCaches (0ms)
-			SetupLoadedEditorAssemblies (377ms)
+			SetupLoadedEditorAssemblies (308ms)
 				LogAssemblyErrors (0ms)
 				InitializePlatformSupportModulesInManaged (4ms)
 				SetLoadedEditorAssemblies (3ms)
 				RefreshPlugins (0ms)
-				BeforeProcessingInitializeOnLoad (66ms)
-				ProcessInitializeOnLoadAttributes (255ms)
-				ProcessInitializeOnLoadMethodAttributes (41ms)
-				AfterProcessingInitializeOnLoad (8ms)
+				BeforeProcessingInitializeOnLoad (58ms)
+				ProcessInitializeOnLoadAttributes (212ms)
+				ProcessInitializeOnLoadMethodAttributes (27ms)
+				AfterProcessingInitializeOnLoad (5ms)
 				EditorAssembliesLoaded (0ms)
 			ExecutionOrderSort2 (0ms)
-			AwakeInstancesAfterBackupRestoration (17ms)
-Refreshing native plugins compatible for Editor in 3.83 ms, found 4 plugins.
+			AwakeInstancesAfterBackupRestoration (12ms)
+Refreshing native plugins compatible for Editor in 4.30 ms, found 4 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
-Unloading 3933 Unused Serialized files (Serialized files now loaded: 0)
-Unloading 35 unused Assets / (42.0 KB). Loaded Objects now: 4434.
-Memory consumption went from 132.5 MB to 132.4 MB.
-Total: 3.075000 ms (FindLiveObjects: 0.300100 ms CreateObjectMapping: 0.260300 ms MarkObjects: 2.452000 ms  DeleteObjects: 0.061500 ms)
+Unloading 3932 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 35 unused Assets / (34.6 KB). Loaded Objects now: 4428.
+Memory consumption went from 132.3 MB to 132.2 MB.
+Total: 3.759900 ms (FindLiveObjects: 0.291500 ms CreateObjectMapping: 0.352900 ms MarkObjects: 3.044300 ms  DeleteObjects: 0.070100 ms)
 
 Prepare: number of updated asset objects reloaded= 0
 AssetImportParameters requested are different than current active one (requested -> active):
@@ -1282,11 +234,3 @@ AssetImportParameters requested are different than current active one (requested
   custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
   custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
-========================================================================
-Received Import Request.
-  Time since last request: 106.515959 seconds.
-  path: Assets/Enemy proto.prefab
-  artifactKey: Guid(9d41afce9f44c1f4190ca2c1f6a7ebab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Enemy proto.prefab using Guid(9d41afce9f44c1f4190ca2c1f6a7ebab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '81a978efef2d68cbd06059e43ce4fc29') in 0.101370 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 152
