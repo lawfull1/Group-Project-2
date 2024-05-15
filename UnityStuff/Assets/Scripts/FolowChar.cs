@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class FolowChar : MonoBehaviour
 {
@@ -11,6 +12,13 @@ public class FolowChar : MonoBehaviour
     //time to follow target
     public float flowieTime;
 
+    private Scene curScn;
+
+
+    private void Start()
+    {
+        curScn = SceneManager.GetActiveScene();
+    }
 
     void FixedUpdate()
     {
@@ -29,6 +37,7 @@ public class FolowChar : MonoBehaviour
             targetPos.x = 57;
         }
 
+        if(curScn.name == "Level0")
             targetPos.y = 0;
 
         transform.position = Vector3.SmoothDamp(transform.position, targetPos, ref velocity, flowieTime);

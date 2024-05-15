@@ -226,9 +226,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: {x: -5, y: 0}
-  topSpeed: 10
-  acceleration: 20
+  topSpeed: 5
+  acceleration: 10
   payer:
     serializedVersion: 2
     m_Bits: 64
   Player: {fileID: 654440561917230910, guid: 5c017a7355b8768428eb10741a89b169, type: 3}
+  PlayerPunc: {fileID: 654440561917230910, guid: 5c017a7355b8768428eb10741a89b169, type: 3}

@@ -12,6 +12,7 @@ public class Enemymovement : MonoBehaviour
     private Vector2 velocity;
     public LayerMask payer;
     public BoxCollider2D Player;
+    public BoxCollider2D PlayerPunc;
     RaycastHit2D rayCast1;
     RaycastHit2D rayCast;
     // Start is called before the first frame update
@@ -19,6 +20,7 @@ public class Enemymovement : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         Player = GameObject.FindGameObjectWithTag("Player").GetComponent<BoxCollider2D>();
+        PlayerPunc = GameObject.FindGameObjectWithTag("Player").GetComponentInChildren<BoxCollider2D>();
     }
 
     // Update is called once per frame
@@ -28,17 +30,16 @@ public class Enemymovement : MonoBehaviour
         Debug.DrawRay(transform.position+ (new Vector3(0, 0.5f)), transform.TransformDirection(-Vector2.right *10), Color.yellow);
         rayCast = Physics2D.Raycast(transform.position + (new Vector3(0, 0.5f)), -Vector2.right, 10, payer);
         rayCast1 = Physics2D.Raycast(transform.position + (new Vector3(0, 0.5f)), Vector2.right, 10, payer);
-        Debug.Log(rayCast.distance);
         if (rayCast.distance >= 1 || rayCast1.distance >= 1)
         {
-            if (rayCast.collider == Player)
+            if (rayCast.collider == Player || rayCast.collider == Player)
             {
                 velocity += speed * acceleration * Time.deltaTime;
                 velocity = Vector2.ClampMagnitude(velocity, topSpeed);
                 rb.velocity = velocity;
 
             }
-            else if (rayCast1.collider == Player)
+            else if (rayCast1.collider == Player || rayCast1.collider == PlayerPunc)
             {
                 velocity += speed * acceleration * Time.deltaTime;
                 velocity = Vector2.ClampMagnitude(velocity, topSpeed);
