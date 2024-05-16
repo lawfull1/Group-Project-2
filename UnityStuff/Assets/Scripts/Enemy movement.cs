@@ -1,3 +1,4 @@
+using System.Threading;
 using UnityEditorInternal.Profiling.Memory.Experimental;
 using UnityEngine;
 
@@ -15,6 +16,9 @@ public class Enemymovement : MonoBehaviour
     public BoxCollider2D PlayerPunc;
     RaycastHit2D rayCast1;
     RaycastHit2D rayCast;
+    private PlayerMovement plrMov;
+
+    public int Halth;
     // Start is called before the first frame update
     void Start()
     {
@@ -51,10 +55,20 @@ public class Enemymovement : MonoBehaviour
         {
             rb.velocity = new Vector2(0, 0);
         }
-
-
-
     }
+
+    private void OnCollisionEnter2D(Collision2D col)
+    {
+        if(col.transform.tag ==  "Player")
+        {
+            Halth = Halth - 10;
+            GameObject bar = GetComponentInChildren<GameObject>();
+            bar.gameObject.transform.localScale = new Vector2(Halth / 100, 0.05f);
+            Debug.Log("hit");
+        }        
+    }
+
+
 }
 /*
  * Player Animations

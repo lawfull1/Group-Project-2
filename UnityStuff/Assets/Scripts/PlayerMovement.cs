@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class PlayerMovement : MonoBehaviour
@@ -40,7 +41,7 @@ public class PlayerMovement : MonoBehaviour
     //Animations and stuff for dumies
     public Animator ani;
 
-
+    public int plrHelth;
 
     // Update is called once per frame
     void Update()
@@ -133,9 +134,15 @@ public class PlayerMovement : MonoBehaviour
         }
         if(col.transform.tag == "enime")
         {
-            currentHp = 0.01f; 
-            
+            currentHp = 0.01f;    
         }
+        if(col.transform.tag == "EndOfLevel")
+        {
+            SceneManager.LoadScene(2);
+        }
+
+
+
 
     }
     void OnCollisionExit2D(Collision2D col)

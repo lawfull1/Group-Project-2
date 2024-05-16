@@ -245,7 +245,7 @@ Rigidbody2D:
     m_Bits: 0
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 4
 --- !u!61 &654440561917230910
 BoxCollider2D:
@@ -319,6 +319,7 @@ MonoBehaviour:
   prePuffySpeed: 10
   sprRen: {fileID: 2211708429340770561}
   ani: {fileID: 3409362623068581869}
+  plrHelth: 0
 --- !u!1 &8185645553426679759
 GameObject:
   m_ObjectHideFlags: 0
