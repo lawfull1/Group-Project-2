@@ -35,28 +35,31 @@ public class GameManager : MonoBehaviour
     }
     void Update()
     {
-        if (spawnCount < calculateSpawnCount)
+        if(SceneManager.GetActiveScene().buildIndex == 1)
         {
-            whichNode = Random.Range(1, 5);
-            if (whichNode != enmiePlace1 && whichNode != enmiePlace2 && whichNode != enmiePlace3)
+            if (spawnCount < calculateSpawnCount)
             {
-                if (enmiePlace1 == 0)
+                whichNode = Random.Range(1, 5);
+                if (whichNode != enmiePlace1 && whichNode != enmiePlace2 && whichNode != enmiePlace3)
                 {
-                    enmiePlace1 = whichNode;
-                }
-                else if (enmiePlace2 == 0)
-                {
-                    enmiePlace2 = whichNode;
-                }
-                else if (enmiePlace3 == 0)
-                {
-                    enmiePlace3 = whichNode;
-                    isBossReady = true;
-                }
-                print("Node " + whichNode);
-                placeEnmie();
-                spawnCount++;
+                    if (enmiePlace1 == 0)
+                    {
+                        enmiePlace1 = whichNode;
+                    }
+                    else if (enmiePlace2 == 0)
+                    {
+                        enmiePlace2 = whichNode;
+                    }
+                    else if (enmiePlace3 == 0)
+                    {
+                        enmiePlace3 = whichNode;
+                        isBossReady = true;
+                    }
+                    print("Node " + whichNode);
+                    placeEnmie();
+                    spawnCount++;
 
+                }
             }
         }
     }

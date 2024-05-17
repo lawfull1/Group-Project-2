@@ -28,6 +28,7 @@ public class PlayerMovement : MonoBehaviour
     private float damage;
     private float damageDone;
     private float maxHealth=1;
+    public GameObject Health;
     public Image healthBar;
     private float currentHp=1;
     public GameObject punchBox;
@@ -40,12 +41,18 @@ public class PlayerMovement : MonoBehaviour
     public GameObject sprRen;
     //Animations and stuff for dumies
     public Animator ani;
-
+    public GameObject Pause;
     public int plrHelth;
 
     // Update is called once per frame
     void Update()
     {
+
+        if (Input.GetKeyDown(KeyCode.Escape)){
+            Pausea();
+        }
+
+
         if (moveVelocity == 0)
         {
             Idle();
@@ -70,21 +77,55 @@ public class PlayerMovement : MonoBehaviour
         {
             flowie += speed;
         }
-        if (!(moveVelocity == 0))
+        if (!(moveVelocity == 0) && Input.GetKeyDown(KeyCode.Mouse0))
         {
-            ani.SetInteger("Animation_Control", 2);
+            
             if (moveVelocity < 0)
             {
                 sprRen.GetComponent<SpriteRenderer>().flipX = true;
-                punchBox.transform.localPosition = new Vector2(-0.25f, 0);
+                punchBox.transform.localPosition = new Vector2(-1, 0);
             }
-            else
+            else if (moveVelocity > 0)
             {
                 sprRen.GetComponent<SpriteRenderer>().flipX = false;
-                punchBox.transform.localPosition= new Vector2(0.25f, 0);
+                punchBox.transform.localPosition= new Vector2(1, 0);
             }
-
+            ani.SetInteger("Animation_Control", 4);
+            if (ani.GetCurrentAnimatorStateInfo(0).IsName("punch"))
+            {
+                goto PT2; 
+            }
+        }else if (!(moveVelocity == 0))
+        {
+            if (moveVelocity < 0)
+            {
+                sprRen.GetComponent<SpriteRenderer>().flipX = true;
+                punchBox.transform.localPosition = new Vector2(-1, 0);
+            }
+            else if (moveVelocity > 0)
+            {
+                sprRen.GetComponent<SpriteRenderer>().flipX = false;
+                punchBox.transform.localPosition = new Vector2(1, 0);
+            }
+            ani.SetInteger("Animation_Control", 2);
         }
+
+        PT2: 
+            if(!(moveVelocity == 0) && ani.GetCurrentAnimatorStateInfo(0).IsName("punch"))
+            {
+                
+                if (moveVelocity < 0)
+                {
+                sprRen.GetComponent<SpriteRenderer>().flipX = true;
+                punchBox.transform.localPosition = new Vector2(-1, 0);
+                }
+                else if (moveVelocity > 0)
+            {
+                sprRen.GetComponent<SpriteRenderer>().flipX = false;
+                punchBox.transform.localPosition = new Vector2(1, 0);
+                }
+                ani.SetInteger("Animation_Control", 2);
+            }
 
         moveVelocity = Input.GetAxisRaw("Horizontal") * speed;
         GetComponent<Rigidbody2D>().velocity = new Vector2(moveVelocity, GetComponent<Rigidbody2D>().velocity.y);
@@ -131,17 +172,17 @@ public class PlayerMovement : MonoBehaviour
         {
             isGrounded = true;
             Jumps = 2;
+            
         }
-        if(col.transform.tag == "enime")
+        if (col.transform.tag == "enime")
         {
-            currentHp = 0.01f;    
+            currentHp = 0.01f;
+            Debug.Log("woh");
         }
-        if(col.transform.tag == "EndOfLevel")
+        if (col.transform.tag == "ENDOFLEVEL")
         {
-            SceneManager.LoadScene(2);
+            EndLvl();
         }
-
-
 
 
     }
@@ -152,7 +193,11 @@ public class PlayerMovement : MonoBehaviour
             isGrounded = false;
             
         }
+        
     }
+
+
+
     private void puffyActivated()
     {
         //sets puffyTime as needed
@@ -196,6 +241,7 @@ public class PlayerMovement : MonoBehaviour
     }
 
 
+
     private void Idle()
     {
         
@@ -204,7 +250,31 @@ public class PlayerMovement : MonoBehaviour
 
     }
 
+    public void GameOver()
+    {
+        Time.timeScale= 0;
+        healthBar.gameObject.SetActive(false);
 
+    }
+    private void EndLvl()
+    {
+        SceneManager.LoadScene(2);
+    }
+    public void Pausea()
+    {
+        if (!Pause.activeSelf)
+        {
+            Health.SetActive(false);
+            Pause.SetActive(true);
+            Time.timeScale = 0;
+        }
+        else
+        {
+            Health.SetActive(true);
+            Pause.SetActive(false);
+            Time.timeScale = 1;
+        }
+    }
 
 
 }

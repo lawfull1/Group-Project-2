@@ -1,5 +1,4 @@
-using System.Threading;
-using UnityEditorInternal.Profiling.Memory.Experimental;
+using System.Collections;
 using UnityEngine;
 
 public class Enemymovement : MonoBehaviour
@@ -7,6 +6,8 @@ public class Enemymovement : MonoBehaviour
     private Rigidbody2D rb;
 
     float moveVelocity;
+    private SpriteRenderer eniSpr;
+    public Transform eni;
     public Vector2 speed;
     public float topSpeed;
     public float acceleration;
@@ -17,14 +18,20 @@ public class Enemymovement : MonoBehaviour
     RaycastHit2D rayCast1;
     RaycastHit2D rayCast;
     private PlayerMovement plrMov;
-
+    public BoxCollider2D eniBox;
     public int Halth;
     // Start is called before the first frame update
+
+
+
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         Player = GameObject.FindGameObjectWithTag("Player").GetComponent<BoxCollider2D>();
         PlayerPunc = GameObject.FindGameObjectWithTag("Player").GetComponentInChildren<BoxCollider2D>();
+        eniSpr = GetComponentInChildren<SpriteRenderer>();
+        eni = gameObject.transform;
+        eniBox = eni.GetChild(0).GetComponent<BoxCollider2D>();
     }
 
     // Update is called once per frame
@@ -41,6 +48,8 @@ public class Enemymovement : MonoBehaviour
                 velocity += speed * acceleration * Time.deltaTime;
                 velocity = Vector2.ClampMagnitude(velocity, topSpeed);
                 rb.velocity = velocity;
+                eniSpr.flipX = false;
+                eniBox.transform.localPosition = new Vector2(-1, 0);
 
             }
             else if (rayCast1.collider == Player || rayCast1.collider == PlayerPunc)
@@ -48,6 +57,8 @@ public class Enemymovement : MonoBehaviour
                 velocity += speed * acceleration * Time.deltaTime;
                 velocity = Vector2.ClampMagnitude(velocity, topSpeed);
                 rb.velocity = -velocity;
+                eniSpr.flipX = true;
+                eniBox.transform.localPosition = new Vector2(1, 0);
             }
             
         }
@@ -57,9 +68,9 @@ public class Enemymovement : MonoBehaviour
         }
     }
 
-    private void OnCollisionEnter2D(Collision2D col)
+    void OnCollision2D(Collision2D col)
     {
-        if(col.transform.tag ==  "Player")
+        if(eniBox ==  PlayerPunc)
         {
             Halth = Halth - 10;
             GameObject bar = GetComponentInChildren<GameObject>();
