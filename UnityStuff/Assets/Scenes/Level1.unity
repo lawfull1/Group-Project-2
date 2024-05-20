@@ -254,6 +254,11 @@ MonoBehaviour:
   eni: {fileID: 0}
   PlayerPunc: {fileID: 0}
   punc: {fileID: 0}
+--- !u!1 &144582287 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5564510431127149752, guid: 5c017a7355b8768428eb10741a89b169, type: 3}
+  m_PrefabInstance: {fileID: 5056452846686161340}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &145535778
 GameObject:
   m_ObjectHideFlags: 0
@@ -2118,7 +2123,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 15
+  orthographic size: 13
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -2163,6 +2168,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 1232407044}
   flowieTime: 0.1
+  Enime: {fileID: 78085308}
+  player: {fileID: 144582287}
+  pix: {fileID: 0}
 --- !u!114 &519420034
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2175,7 +2183,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a160d838ff8b4b4693ac20007e008c7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_AssetsPPU: 36
+  m_AssetsPPU: 43
   m_RefResolutionX: 1920
   m_RefResolutionY: 1080
   m_UpscaleRT: 1
@@ -2594,7 +2602,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.0038452148, y: 0.0010986328}
+  m_AnchoredPosition: {x: -0.0036621094, y: 0.0010986328}
   m_SizeDelta: {x: 3839.6, y: 2159.7}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &797091091
@@ -5759,7 +5767,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2730479126364371342, guid: 5c017a7355b8768428eb10741a89b169, type: 3}
   m_PrefabInstance: {fileID: 5056452846686161340}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 144582287}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 92657f5f1dbbeca4da0b23ad3ef287de, type: 3}

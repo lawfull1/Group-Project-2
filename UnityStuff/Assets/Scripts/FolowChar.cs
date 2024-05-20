@@ -1,5 +1,7 @@
+using System.Runtime.CompilerServices;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.U2D;
 
 public class FolowChar : MonoBehaviour
 {
@@ -13,11 +15,16 @@ public class FolowChar : MonoBehaviour
     public float flowieTime;
 
     private Scene curScn;
+    public GameObject Enime;
+    public GameObject player;
+    private float dis;
 
+    public PixelPerfectCamera pix;
 
     private void Start()
     {
         curScn = SceneManager.GetActiveScene();
+        pix = GetComponent<PixelPerfectCamera>();
     }
 
     void FixedUpdate()
@@ -46,6 +53,9 @@ public class FolowChar : MonoBehaviour
         }
         else if (curScn.buildIndex == 2)
         {
+            float dis =  Mathf.Abs(Enime.transform.position.x - player.transform.position.x);
+            Debug.Log(dis);
+            pix.assetsPPU = Mathf.RoundToInt(-dis+53);
             targetPos.z = -10;
             if (targetPos.x > 2 && transform.position.x < 19)
             {
